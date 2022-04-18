@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 18, 2022 at 05:34 AM
+-- Generation Time: Apr 18, 2022 at 06:26 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.3.27
 
@@ -20,6 +20,39 @@ SET time_zone = "+00:00";
 --
 -- Database: `hoteldb`
 --
+
+DELIMITER $$
+--
+-- Procedures
+--
+CREATE DEFINER=`root`@`localhost` PROCEDURE `simpan_f_hotel` (`id` INT(11), `nama_fasilitas` VARCHAR(255), `img` VARCHAR(255), `desk` VARCHAR(255))  BEGIN
+	insert into f_hotel
+	values (id, nama_fasilitas, img, desk);
+    END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `simpan_f_kamar` (`id` INT(11), `id_tipekamar` INT(3), `nama_fasilitas` VARCHAR(255), `kategori` VARCHAR(255), `img` VARCHAR(255))  BEGIN
+	
+	INSERT INTO f_kamar
+	VALUES (id, id_tipekamar, nama_fasilitas, kategori, img);
+	
+    END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `simpan_pemesanan` (`id_pesanan` INT(11), `nama_pemesan` VARCHAR(50), `email` VARCHAR(35), `no_hp` VARCHAR(35), `nama_tamu` VARCHAR(50), `id_kamar` INT(11), `tgl_cekin` INT(8), `tgl_cekout` INT(8), `jml_kamar` INT(11), `Harga` INT(11), `PayBay` VARCHAR(244), `PayEnd` INT(1), `Status_Kamar` VARCHAR(255), `RefPB` VARCHAR(255))  BEGIN
+	INSERT INTO pemesanan
+	VALUES (id_pesanan, nama_pemesan, email, no_hp, nama_tamu, id_kamar, tgl_cekin, tgl_cekout, jml_kamar, Harga, PayBay, PayEnd, Status_Kamar, RefPB);
+    END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `simpan_tipe_room` (`id` INT(11), `Nama_room` VARCHAR(244), `harga` INT(11), `Stok` INT(11), `oneuse` INT(11), `onbook` INT(11), `img_room` VARCHAR(255))  BEGIN
+	INSERT INTO tipe_room
+	VALUES (id, Nama_room, harga, Stok, oneuse, onebook, img_room);
+    END$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `simpan_users` (`id_login` INT(11), `username` VARCHAR(35), `pass` VARCHAR(35), `Nama` VARCHAR(255), `jenis_kelamin` VARCHAR(255), `tgl_lahir` INT(8), `no_hp` VARCHAR(14), `leveling` VARCHAR(10))  BEGIN
+	INSERT INTO users
+	VALUES (id_login, username, pass, Nama, jenis_kelamin, tgl_lahir, no_hp, leveling);
+    END$$
+
+DELIMITER ;
 
 -- --------------------------------------------------------
 
