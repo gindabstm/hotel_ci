@@ -14,10 +14,10 @@
                 <img src="https://images.unsplash.com/photo-1615460549969-36fa19521a4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="Logo" class="card-img-top" alt="" style="max-height: 500px;object-fit: cover;">
                 <div class="card-body">
                     <p class="card-text mt-3 " style="text-align:center;"> Masukan Code Booking :
-                        <form action="<?= base_url('/Resepsionis/cari_data') ?>" method="get">
-                            <input type="text" name="ref" class="form-control">
-                            <button type="submit" class="btn btn-primary col-md-12 mt-3">Cari</button>
-                        </form>
+                    <form action="<?= base_url('/Resepsionis/cari_data') ?>" method="get">
+                        <input type="text" name="ref" class="form-control">
+                        <button type="submit" class="btn btn-primary col-md-12 mt-3">Cari</button>
+                    </form>
                     </p>
                 </div>
             </div>

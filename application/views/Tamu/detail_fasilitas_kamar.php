@@ -19,22 +19,22 @@
                                 Fasilitas :
                             </p>
                             <p>
-                                <div class="row">
-                                    <?php if (!empty($kamar['F_kamar'])) : ?>
-                                        <?php foreach ($kamar['F_kamar'] as $key2 => $F) : ?>
-                                            <div class="col-lg-4">
-                                                <div class="fh5co-blog animate-box">
-                                                    <img src="<?= $F->img ?>" class="col-md-9" alt="...">
-                                                    <div class="card-body">
-                                                        <h5 class="blog-text"><?= $F->nama_fasilitas ?> </h5>
-                                                    </div>
+                            <div class="row">
+                                <?php if (!empty($kamar['F_kamar'])) : ?>
+                                    <?php foreach ($kamar['F_kamar'] as $key2 => $F) : ?>
+                                        <div class="col-lg-4">
+                                            <div class="fh5co-blog animate-box">
+                                                <img src="<?= $F->img ?>" class="col-md-9" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="blog-text"><?= $F->nama_fasilitas ?> </h5>
                                                 </div>
                                             </div>
-                                        <?php endforeach; ?>
-                                    <?php endif; ?>
-                                </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
+                            </div>
                             </p>
-                            <a href="<?= base_url('/Tamu/booking') . '?id=' . $kamar['Info_kamar']->id ?> " class="btn btn-primary">Booking Sekarang</a>
+                            <a href="<?= base_url('/Tamu/booking') . '?id=' . $kamar['Info_kamar']->id ?> " class="btn btn-primary">Pesan Sekarang</a>
                         </div>
                     </div>
                 </div>

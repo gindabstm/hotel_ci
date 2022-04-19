@@ -12,12 +12,12 @@
 
             <div class="pricing">
                 <?php foreach ($data['book'] as $key => $item) : ?>
-                    <div class="col-md-3 animate-box">
+                    <div class="col-md-6 animate-box">
                         <div class="price-box">
 
                             <div class="card">
                                 <img src="<?= $item->img_room ?>" class="price-box" alt="<?= $item->img_room ?>">
-                                <div class="card-body">
+                                <div class="card-body" style="text-align: left">
                                     <h5 class="card-title"><?= $item->Nama_room ?> x <?= $item->jml_kamar ?> Kamar</h5>
                                     <p>Nama Tamu = <?= $item->nama_tamu ?></p>
                                     <p>Tanggal Cekin = <?= $item->tgl_cekin ?></p>
@@ -38,8 +38,8 @@
                                         </strong>
                                     </p>
                                     <p>
-                                        <a href="<?= base_url('/Tamu/print?id=' . $item->id_pesanan) ?>" class="btn btn-primary  mt-3">Print Pesanan</a>
-                                        <a href="<?= base_url('Tamu/batal') . '?id=' . $item->id_pesanan; ?>" class="btn btn-danger  mt-3">Batalkan Pesanan</a>
+                                        <a href="<?= base_url('/Tamu/print?id=' . $item->id_pesanan) ?>" class="btn btn-primary md-6  mt-3">Print Pesanan</a>
+                                        <a href="<?= base_url('Tamu/batal') . '?id=' . $item->id_pesanan; ?>" class="btn btn-danger md-6 mt-3">Batalkan Pesanan</a>
                                     </p>
                                 </div>
                             </div>

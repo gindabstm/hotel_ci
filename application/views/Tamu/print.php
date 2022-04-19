@@ -25,29 +25,29 @@
 					Kode Booking Anda :
 				</p>
 				<p>
-					<div class="row">
-						<?php $data['book'] = array_reverse($data['book']);
-						foreach ($data['book'] as $key => $item) : ?>
-							<div class="col-md-6 mb-2">
-								<div class="card">
-									<img src="<?= $item->img_room ?>" style="width: 150px;" class="card-img-top" alt="<?= $item->img_room ?>">
-									<div class="card-body">
-										<h5 class="card-title"><?= $item->Nama_room ?> x <?= $item->jml_kamar ?> Kamar </h5>
-										<p>Nama Tamu = <?= $item->nama_tamu ?></p>
-										<p>Tgl cekin = <?= $item->tgl_cekin ?></p>
-										<p>Tgl cekout = <?= $item->tgl_cekout ?></p>
-										<p>Sistem pembayaran = <?= $item->PayBay ?></p>
-										<p>
-											<strong>
-												CODEBooking = <?= $item->RefPB ?>
-											</strong>
-										</p>
-									</div>
+				<div class="row">
+					<?php $data['book'] = array_reverse($data['book']);
+					foreach ($data['book'] as $key => $item) : ?>
+						<div class="col-md-6 mb-2">
+							<div class="card">
+								<img src="<?= $item->img_room ?>" style="width: 150px;" class="card-img-top" alt="<?= $item->img_room ?>">
+								<div class="card-body">
+									<h5 class="card-title"><?= $item->Nama_room ?> x <?= $item->jml_kamar ?> Kamar </h5>
+									<p>Nama tamu = <?= $item->nama_tamu ?></p>
+									<p>Tanggal cekin = <?= $item->tgl_cekin ?></p>
+									<p>Tanggal cekout = <?= $item->tgl_cekout ?></p>
+									<p>Sistem pembayaran = <?= $item->PayBay ?></p>
+									<p>
+										<strong>
+											CODEBooking = <?= $item->RefPB ?>
+										</strong>
+									</p>
 								</div>
 							</div>
-						<?php endforeach; ?>
+						</div>
+					<?php endforeach; ?>
 
-					</div>
+				</div>
 				</p>
 			</div>
 		</div>

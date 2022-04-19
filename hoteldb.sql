@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 18, 2022 at 06:26 AM
--- Server version: 10.4.18-MariaDB
--- PHP Version: 7.3.27
+-- Waktu pembuatan: 19 Apr 2022 pada 06.48
+-- Versi server: 10.4.18-MariaDB
+-- Versi PHP: 7.3.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 
 DELIMITER $$
 --
--- Procedures
+-- Prosedur
 --
 CREATE DEFINER=`root`@`localhost` PROCEDURE `simpan_f_hotel` (`id` INT(11), `nama_fasilitas` VARCHAR(255), `img` VARCHAR(255), `desk` VARCHAR(255))  BEGIN
 	insert into f_hotel
@@ -57,7 +57,7 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `data_log`
+-- Struktur dari tabel `data_log`
 --
 
 CREATE TABLE `data_log` (
@@ -67,7 +67,7 @@ CREATE TABLE `data_log` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `data_log`
+-- Dumping data untuk tabel `data_log`
 --
 
 INSERT INTO `data_log` (`id`, `data`, `time`) VALUES
@@ -698,12 +698,51 @@ INSERT INTO `data_log` (`id`, `data`, `time`) VALUES
 (628, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-16 05:13:23'),
 (629, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-16 05:13:30'),
 (630, '{\"get\":[],\"post\":[]}', '2022-04-18 03:29:05'),
-(631, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-18 03:29:12');
+(631, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-18 03:29:12'),
+(632, '{\"get\":[],\"post\":[]}', '2022-04-19 03:12:53'),
+(633, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 03:13:05'),
+(634, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 03:21:38'),
+(635, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 03:21:39');
+INSERT INTO `data_log` (`id`, `data`, `time`) VALUES
+(636, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":[],\"post\":[]}', '2022-04-19 03:22:29'),
+(637, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 03:28:28'),
+(638, '{\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 03:31:00'),
+(639, '{\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 03:31:28'),
+(640, '{\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 03:32:31'),
+(641, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 03:38:24'),
+(642, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 03:38:49'),
+(643, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 03:38:49'),
+(644, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 03:38:49'),
+(645, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/kontak\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 03:39:21'),
+(646, '{\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 03:44:16'),
+(647, '{\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 03:45:11'),
+(648, '{\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 03:48:06'),
+(649, '{\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 03:48:10'),
+(650, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/ref?req=Book\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 03:59:37'),
+(651, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":[],\"post\":[]}', '2022-04-19 04:01:04'),
+(652, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-04-19 04:01:10'),
+(653, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-04-19 04:01:15'),
+(654, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Admin\\/add?v=allcounter&t=users&req=Data%20Traking\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-04-19 04:11:32'),
+(655, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Admin\\/add?v=allcounter&t=users&req=Data%20Traking\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-04-19 04:14:56'),
+(656, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Admin\\/add?v=allcounter&t=users&req=Data%20Traking\",\"get\":[],\"post\":[]}', '2022-04-19 04:17:02'),
+(657, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Resepsionis\\/call?req=Filter%20Pencarian%20Data&t=pemesanan&v=filter\",\"get\":[],\"post\":[]}', '2022-04-19 04:19:47'),
+(658, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 04:19:54'),
+(659, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/ref?req=Book\",\"get\":[],\"post\":[]}', '2022-04-19 04:21:09'),
+(660, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-04-19 04:21:17'),
+(661, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/admin\\/add?v=allcounter&t=Tipe_room&req=Data%20Traking\",\"get\":[],\"post\":[]}', '2022-04-19 04:23:02'),
+(662, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-04-19 04:23:08'),
+(663, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/admin\\/add?v=allcounter&t=F_kamar&req=Data%20Traking\",\"get\":[],\"post\":[]}', '2022-04-19 04:23:14'),
+(664, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Resepsionis\\/cari_data?ref=041022Transfer+Bank170828\",\"get\":[],\"post\":[]}', '2022-04-19 04:31:20'),
+(665, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Resepsionis\\/cari_data?ref=041122Transfer+Bank102859\",\"get\":[],\"post\":[]}', '2022-04-19 04:36:25'),
+(666, '{\"get\":[],\"post\":[],\"user\":{\"id_login\":\"14\",\"username\":\"resepsionis\",\"password\":\"12345678\",\"Nama\":\"resepsionis\",\"jenis_kelamin\":\"laki-laki\",\"tgl_lahir\":\"2012-04-03\",\"no_hp\":\"081518651585\",\"level\":\"resepsionis\"}}', '2022-04-19 04:46:39'),
+(667, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Resepsionis\\/call?req=Filter%20Pencarian%20Data&t=pemesanan&v=filter\",\"get\":[],\"post\":[]}', '2022-04-19 04:46:47'),
+(668, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-04-19 04:46:48'),
+(669, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-04-19 04:47:11');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `f_hotel`
+-- Struktur dari tabel `f_hotel`
 --
 
 CREATE TABLE `f_hotel` (
@@ -714,7 +753,7 @@ CREATE TABLE `f_hotel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `f_hotel`
+-- Dumping data untuk tabel `f_hotel`
 --
 
 INSERT INTO `f_hotel` (`id`, `nama_fasilitas`, `img`, `deks`) VALUES
@@ -726,7 +765,7 @@ INSERT INTO `f_hotel` (`id`, `nama_fasilitas`, `img`, `deks`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `f_kamar`
+-- Struktur dari tabel `f_kamar`
 --
 
 CREATE TABLE `f_kamar` (
@@ -738,7 +777,7 @@ CREATE TABLE `f_kamar` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `f_kamar`
+-- Dumping data untuk tabel `f_kamar`
 --
 
 INSERT INTO `f_kamar` (`id`, `id_tipekamar`, `nama_fasilitas`, `kategori`, `img`) VALUES
@@ -751,7 +790,7 @@ INSERT INTO `f_kamar` (`id`, `id_tipekamar`, `nama_fasilitas`, `kategori`, `img`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pemesanan`
+-- Struktur dari tabel `pemesanan`
 --
 
 CREATE TABLE `pemesanan` (
@@ -772,11 +811,11 @@ CREATE TABLE `pemesanan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `pemesanan`
+-- Dumping data untuk tabel `pemesanan`
 --
 
 INSERT INTO `pemesanan` (`id_pesanan`, `nama_pemesan`, `email`, `no_hp`, `nama_tamu`, `id_kamar`, `tgl_cekin`, `tgl_cekout`, `jml_kamar`, `Harga`, `PayBay`, `PayEnd`, `Status_Kamar`, `RefPB`) VALUES
-(40, 'welcome', 'welcome@gmail.com', '0815858651890', 'welcome', 1, '2022-04-10', '2022-04-11', 1, 1000000, 'Transfer Bank', 0, '0', '041022Transfer Bank170828'),
+(40, 'welcome', 'welcome@gmail.com', '0815858651890', 'welcome', 1, '2022-04-10', '2022-04-11', 1, 1000000, 'Transfer Bank', 1, '0', '041022Transfer Bank170828'),
 (41, 'welcome 2', 'cobadulu2@gmail.com', '0815858651891', 'welcome 2', 1, '2022-04-10', '2022-04-11', 3, 3000000, 'Transfer Bank', 0, '0', '041022Transfer Bank170836'),
 (42, 'welcome 22e', 'ginda123@gmail.com', '0815858651891', 'welcome 22e', 2, '2022-04-10', '2022-04-16', 1, 20000, 'E-wallet(Dana-ovo)', 0, '0', '041022E-wallet(Dana-ovo)171413'),
 (43, 'welcome 22e', 'ginda123@gmail.com', '0815858651891', 'welcome 22e', 2, '2022-04-10', '2022-04-16', 1, 20000, 'E-wallet(Dana-ovo)', 0, '0', '041022E-wallet(Dana-ovo)171700'),
@@ -792,10 +831,11 @@ INSERT INTO `pemesanan` (`id_pesanan`, `nama_pemesan`, `email`, `no_hp`, `nama_t
 (61, 'GINDUL', 'ginda123@gmail.com', '08158696574', 'ginda coba2', 1, '2022-04-12', '2022-04-12', 1, 500000, 'Transfer Bank', 0, '0', '041122Transfer Bank183507'),
 (62, 'welcome 22e', 'ginda123@gmail.com', '081585586958', 'welcome 22e', 1, '2022-04-13', '2022-04-12', 1, 500000, 'Transfer Bank', 1, '0', '041122Transfer Bank185028'),
 (63, 'welcome', 'ginda123@gmail.com', '0815858651890', 'welcome', 1, '2022-04-13', '2022-04-14', 1, 500000, 'E-wallet(Dana-ovo)', 0, '0', '041222E-wallet(Dana-ovo)000757'),
-(64, 'welcome', 'ginda123@gmail.com', '0815858651891', 'welcome', 1, '2022-04-12', '2022-04-13', 1, 500000, 'Transfer Bank', 0, '0', '041222Transfer Bank001252');
+(64, 'welcome', 'ginda123@gmail.com', '0815858651891', 'welcome', 1, '2022-04-12', '2022-04-13', 1, 500000, 'Transfer Bank', 0, '0', '041222Transfer Bank001252'),
+(76, 'Ginda Bustomi', 'lamohlouis12@gmail.com', '0895635198512', 'HIDAN', 1, '2022-04-19', '2022-04-20', 1, 500000, 'Transfer Bank', 1, 'Cekin', '041922Transfer Bank062027');
 
 --
--- Triggers `pemesanan`
+-- Trigger `pemesanan`
 --
 DELIMITER $$
 CREATE TRIGGER `Update Stok` AFTER INSERT ON `pemesanan` FOR EACH ROW UPDATE
@@ -815,7 +855,7 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tipe_room`
+-- Struktur dari tabel `tipe_room`
 --
 
 CREATE TABLE `tipe_room` (
@@ -829,18 +869,18 @@ CREATE TABLE `tipe_room` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tipe_room`
+-- Dumping data untuk tabel `tipe_room`
 --
 
 INSERT INTO `tipe_room` (`id`, `Nama_room`, `harga`, `Stok`, `onuse`, `onbook`, `img_room`) VALUES
-(1, 'Superior', 500000, -1, 0, 0, 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'),
+(1, 'Superior', 500000, -2, 0, 0, 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'),
 (2, 'Deluxe', 700000, 95, 0, 0, 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'),
 (8, 'Superior Duoble', 1000000, 10, 0, 0, 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
@@ -855,94 +895,95 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
 INSERT INTO `users` (`id_login`, `username`, `password`, `Nama`, `jenis_kelamin`, `tgl_lahir`, `no_hp`, `level`) VALUES
 (7, 'admin', '12345678', 'admin', 'Laki-Laki', '0000-00-00', '081221823861', 'admin'),
 (14, 'resepsionis', '12345678', 'resepsionis', 'laki-laki', '2012-04-03', '081518651585', 'resepsionis'),
-(19, 'gin', '123', 'Ginda Bustomi', 'Laki-Laki', '2003-07-15', '0895635198512', 'tamu');
+(19, 'gin', '123', 'Ginda Bustomi', 'Laki-Laki', '2003-07-15', '0895635198512', 'tamu'),
+(20, 'gin', '123', 'Muhamad Arief Nur Cahyo', 'Laki-Laki', '2022-04-19', '08945321958485', 'tamu');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `data_log`
+-- Indeks untuk tabel `data_log`
 --
 ALTER TABLE `data_log`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `f_hotel`
+-- Indeks untuk tabel `f_hotel`
 --
 ALTER TABLE `f_hotel`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `f_kamar`
+-- Indeks untuk tabel `f_kamar`
 --
 ALTER TABLE `f_kamar`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `pemesanan`
+-- Indeks untuk tabel `pemesanan`
 --
 ALTER TABLE `pemesanan`
   ADD PRIMARY KEY (`id_pesanan`),
   ADD KEY `id_kamar` (`id_kamar`);
 
 --
--- Indexes for table `tipe_room`
+-- Indeks untuk tabel `tipe_room`
 --
 ALTER TABLE `tipe_room`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id_login`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `data_log`
+-- AUTO_INCREMENT untuk tabel `data_log`
 --
 ALTER TABLE `data_log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=632;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=670;
 
 --
--- AUTO_INCREMENT for table `f_hotel`
+-- AUTO_INCREMENT untuk tabel `f_hotel`
 --
 ALTER TABLE `f_hotel`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `f_kamar`
+-- AUTO_INCREMENT untuk tabel `f_kamar`
 --
 ALTER TABLE `f_kamar`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
--- AUTO_INCREMENT for table `pemesanan`
+-- AUTO_INCREMENT untuk tabel `pemesanan`
 --
 ALTER TABLE `pemesanan`
-  MODIFY `id_pesanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
+  MODIFY `id_pesanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 
 --
--- AUTO_INCREMENT for table `tipe_room`
+-- AUTO_INCREMENT untuk tabel `tipe_room`
 --
 ALTER TABLE `tipe_room`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_login` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id_login` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

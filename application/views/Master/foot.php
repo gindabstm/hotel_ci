@@ -76,6 +76,21 @@
 						kami, dilengkapi pelayanan lengkap dengan ruang konvensi terbesar di Bandung, mampu mengakomodasi hingga 3.000
 						delegasi. Manfaatkan ruang penyelenggaraan konvensi MI.CE ataupun mewujudkan acara pernikahan adat yang mewah</p>
 				</div>
+				<div class="col-md-8">
+					<h3>Kontak Kami</h3>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<ul class="fh5co-footer-links">
+							<li class="address">Jl. Raya Tajur, Kp. Buntar RT.02/RW.08, <br> Kel. Muara sari, Kec. Bogor Selatan, <br> RT.03/RW.08, Muarasari, Kec. Bogor Selatan, <br> Kota Bogor, Jawa Barat 16137</li><br>
+							<li class="phone"><a href="https://wa.me/628158183974" target="_blank">+62 815 8183 974</a></li><br>
+							<li class="email"><a href="https://mailto:ginda1519@gmail.com" target="_blank">hotelhebat@gmail.com</a></li><br>
+							<li class="url"><a href="https://www.instagram.com/gindabstm" target="_blank">Hotel_Hebat</a></li><br>
+						</ul>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
+						<a src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.046997661764!2d106.82287461477135!3d-6.641086295197872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c8b16ee07ef5%3A0x14ab253dd267de49!2sSMK%20Negeri%204%20Kota%20Bogor%20(SMK%20NEBRAZKA)!5e0!3m2!1sid!2sid!4v1645678059796!5m2!1sid!2sid" width="600" height="450" style=";"></a>
+
+					</div>
+				</div>
 			</div>
 
 			<div class="row copyright">

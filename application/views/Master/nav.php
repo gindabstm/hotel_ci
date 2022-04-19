@@ -94,11 +94,11 @@
 							<?php if (!empty($_SESSION['user'])) : ?>
 								<?php if ($_SESSION['user']->level == "tamu") : ?>
 									<li class="<?= base_url('/Tamu/TipeKamar') ?>"><a href="<?= base_url('/Tamu/TipeKamar') ?>?req=Tipe Kamar Pilihanmu">Tipe Kamar</a></li>
-									<li><a href="<?= base_url('/Tamu/ref') ?>?req=Book">Bookingku</a></li>
+									<li><a href="<?= base_url('/Tamu/ref') ?>?req=Book">Pesananku</a></li>
 									<li class="has-dropdown">
-										<a href="#">Profile</a>
+										<a href="#">Profil</a>
 										<ul class="dropdown">
-											<li><a href="#">Profile</a></li>
+											<li><a href="#">Profil</a></li>
 											<li><a href="<?= base_url('/Tamu/kontak') ?>">Kontak</a></li>
 											<li><a href="<?= base_url('/Auth/Logout?out=true') ?>">Keluar</a></li>
 										</ul>
