@@ -5,6 +5,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Hotel Hebat</title>
+	<link rel="shortcut icon" href="<?= base_url('/dist/') ?>favicon.ico" type="image/x-icon">
+	<link rel="icon" href="<?= base_url('/dist/') ?>favicon.ico" type="image/x-icon">	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -64,8 +66,6 @@
 </head>
 
 <body>
-
-
 	<nav class="fh5co-nav" role="navigation">
 		<div class="top">
 			<div class="container">
@@ -83,7 +83,7 @@
 			</div>
 		</div>
 		<div class="top-menu">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<div class="col-xs-2">
 						<div id="fh5co-logo"><a href="#">Hotel.Hebat</a></div>
@@ -110,7 +110,7 @@
 									<li><a href="<?= base_url('/Auth/Logout?out=true') ?>">Keluar</a></li>
 								<?php endif; ?>
 								<?php if ($_SESSION['user']->level == "admin") : ?>
-									<li><a href="<?= base_url('Admin/add?v=allcounter&t=users') ?>&req=Data Traking">Data User</a></li>
+									<!-- <li><a href="<?= base_url('Admin/add?v=allcounter&t=users') ?>&req=Data Traking">Data User</a></li> -->
 									<li><a href="<?= base_url('admin/add?v=allcounter&t=F_kamar') ?>&req=Data Traking">Data Fasilitas Kamar</a></li>
 									<li><a href="<?= base_url('admin/add?v=allcounter&t=F_Hotel') ?>&req=Data Traking">Data Fasilitas Hotel</a></li>
 									<li><a href="<?= base_url('admin/add?v=allcounter&t=Tipe_room') ?>&req=Data Traking">Data Tipe Kamar</a></li>
@@ -130,10 +130,6 @@
 			</div>
 		</div>
 	</nav>
-
-
-
-
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>

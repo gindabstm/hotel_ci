@@ -1,3 +1,5 @@
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <?php $this->load->view('Master/nav'); ?>
 
 <div id="fh5co-trainer">
@@ -11,7 +13,7 @@
 			<div class="container">
 
 				<div class="col-md-12">
-					<div class="text-center card">
+					<div class="text-center">
 						<div class="row">
 							<form action="" method="POST">
 								<div class="col-md-6 mt-3">
@@ -25,8 +27,6 @@
 										</div>
 									</div>
 								</div>
-							</form>
-							<form action="" method="POST">
 								<div class="col-md-6 mt-3">
 									<p class="mt-3">Cari Berdasarkan Tanggal Cekin</p>
 									<div scope="col-6">
@@ -38,7 +38,7 @@
 										</div>
 									</div>
 								</div>
-							</form>
+							</form>			
 						</div>
 					</div>
 				</div>
@@ -49,8 +49,8 @@
 						Data Tidak Di Temukan
 					</h2>
 				<?php else : ?>
-					<table class="table table-bordered table-hover .table-active">
-						<thead>
+					<table class="table table-bordered table-hover .table-active table-striped">
+						<thead class="table-light">
 							<tr>
 								<?php foreach ($data[0] as $key => $value) : ?>
 									<th scope="col"><?= $key ?></th>

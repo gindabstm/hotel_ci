@@ -38,7 +38,7 @@
                                         </strong>
                                     </p>
                                     <p>
-                                        <a href="<?= base_url('/Tamu/print?id=' . $item->id_pesanan) ?>" class="btn btn-primary md-6  mt-3">Print Pesanan</a>
+                                        <a href="<?= base_url('/Tamu/print?id=' . $item->id_pesanan) ?>" class="btn btn-primary md-6  mt-3"  target="_blank">Print Pesanan</a>
                                         <a href="<?= base_url('Tamu/batal') . '?id=' . $item->id_pesanan; ?>" class="btn btn-danger md-6 mt-3">Batalkan Pesanan</a>
                                     </p>
                                 </div>
