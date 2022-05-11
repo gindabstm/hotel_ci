@@ -437,6 +437,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0 0 30px 0;
   list-style: none;
   position: relative;
+  text-align: left;
 }
 .fh5co-contact-info ul li:before {
   color: #F85A16;
@@ -1192,6 +1193,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-blog .blog-text {
   margin-bottom: 30px;
   position: relative;
+  text-align: left;
   background: #fff;
   width: 90%;
   padding: 30px;
