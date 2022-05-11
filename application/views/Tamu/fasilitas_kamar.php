@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                 <h2>Pilih Tipe Kamar</h2>
-                <p>Hotel Hebat menyediakan beberapa kamar yang ada pilih sesuai keinginan anda terimakasih:)</p>
+                <p>Hotel Hebat menyediakan beberapa kamar yang ada pilih sesuai keinginan anda</p>
             </div>
         </div>
 

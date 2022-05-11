@@ -52,7 +52,6 @@
                     <input type="password" name="password" class="form-control" placeholder="Masukan Password">
                   <input style="background-color:#fd7e14" class="btn btn-block login-btn mb-4" type="submit" value="daftar">
                 </form>
-                <a href="#!" class="forgot-password-link">Lupa password?</a>
                 <p class="login-card-footer-text">Sudah punya akun? <a href="<?=base_url('/Auth/login')?>" class="text-reset">Login</a></p>
                 <!-- <nav class="login-card-footer-nav">
                   <a href="#!">Terms of use.</a>
