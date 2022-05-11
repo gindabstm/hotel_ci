@@ -1,114 +1,75 @@
 <?php $this->load->view('Master/nav'); ?>
-<!-- <form method="POST" action="<?= base_url('/Auth/addusers') ?>">
-        <div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100 p-t-50 p-b-90">
-				<form class="login100-form validate-form flex-sb flex-w">
-					<span class="login100-form-title p-b-51">
-						Register
-					</span>
-
-					
-					<div class="wrap-input100 validate-input m-b-16" data-validate = "Username is required">
-						<input class="input100" type="text" name="username" placeholder="Username">
-						<span class="focus-input100"></span>
-                    </div>
-                    
-                    <div class="wrap-input100 validate-input m-b-16" data-validate = "Nama is required">
-						<input class="input100" type="text" name="Nama" placeholder="Masukan Nama Lengkap">
-						<span class="focus-input100"></span>
-                    </div>
-                    
-                    <div class="wrap-input100 validate-input m-b-16">
-                                <select class="input100" name="Jenis_Kelamin">
-                                    <option>Laki-Laki</option>
-									<option>Perempuan</option>
-								</select>
-                            <span class="focus-input100"></span>
-                    </div>
-                
-                    <div class="wrap-input100 validate-input m-b-16" data-validate = "tgl_lahir is required">
-						<input class="input100" type="date" name="tgl_lahir" placeholder="Masukan tgl_lahir">
-						<span class="focus-input100"></span>
-                    </div>
-                    
-                    <div class="wrap-input100 validate-input m-b-16" data-validate = "no_hp is required">
-						<input class="input100" type="text" name="no_hp" placeholder="Masukan Nomor Hp">
-						<span class="focus-input100"></span>
-                    </div>
-
-					<div class="wrap-input100 validate-input m-b-16" data-validate = "Password is required">
-						<input class="input100" type="password" name="password" placeholder="Password">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="container-login100-form-btn m-t-17">
-						<button class="login100-form-btn">
-                        Register
-						</button>
-					</div>
-
-				</form>
-			</div>
-		</div>
-	</div> -->
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login Template</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../dist/assets/css/login.css">
+</head>
+<body>
 <div id="fh5co-contact">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-push-1 animate-box">
-			</div>
-			<div class=" animate-box">
-				<h3 style="text-align:center;">Register</h3>
-				<form method="POST" action="<?= base_url('/Auth/addusers') ?>">
-					<div class="row form-group">
-						<div class="col-md-12">
-							<!-- <label for="fname">First Name</label> -->
-							<input type="text" name="username" class="form-control" placeholder="Masukan Username">
-						</div>
-					</div>
-					<div class="row form-group">
-						<div class="col-md-12">
-							<!-- <label for="email">Email</label> -->
-							<input type="text" name="Nama" class="form-control" placeholder="Masukan Nama Lengkap	">
-						</div>
-					</div>
-					<div class="row form-group">
-						<div class="col-md-12">
-							<!-- <label for="email">Email</label> -->
-							<select class="form-control" name="Jenis_Kelamin">
+  <main class="d-flex align-items-center min-vh-100 py-3 py-md-0">
+
+    <div class="container">
+      <div class="card login-card">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+            <img src="../dist/assets/images/baner.jpg" alt="login" class="login-card-img">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <div class="brand-wrapper">
+            
+						<div id="fh5co-logo"><h4><b>HOTEL.HEBAT</b></h4></div>
+				
+              </div>
+              <p class="login-card-description">Register</p>
+              <form method="POST" action="<?= base_url('/Auth/addusers') ?>">
+                    <!-- <label for="text" class="sr-only">Username</label> -->
+					<input type="text" name="username" class="form-control" placeholder="Masukan Username">
+                  <div class="form-group mb-4">
+                    <!-- <label for="password" class="sr-only">Password</label> -->
+					<input type="text" name="Nama" class="form-control" placeholder="Masukan Nama Lengkap	">
+					<div class="form-group mb-4">
+                    <!-- <label for="password" class="sr-only">Password</label> -->
+                    <select class="form-control" name="Jenis_Kelamin">
 								<option>Laki-Laki</option>
 								<option>Perempuan</option>
 							</select>
-						</div>
-					</div>
-					<div class="row form-group">
-						<div class="col-md-12">
-							<!-- <label for="email">Email</label> -->
-							<input type="date" name="tgl_lahir" class="form-control" placeholder="Masukan Tanggal Lahir">
-						</div>
-					</div>
-					<div class="row form-group">
-						<div class="col-md-12">
-							<!-- <label for="email">Email</label> -->
-							<input type="text" name="no_hp" class="form-control" placeholder="08xxxxxxxx">
-						</div>
-					</div>
-					<div class="row form-group">
-						<div class="col-md-12">
-							<!-- <label for="email">Email</label> -->
-							<input type="password" name="password" class="form-control" placeholder="Masukan Password">
-						</div>
-					</div>
-					<div class="form-group">
-						<input type="submit" value="Register" class="btn btn-primary col-md-12">
-					</div>
-			</div>
+					<div class="form-group mb-4">
+                    <!-- <label for="password" class="sr-only">Password</label> -->
+                    <input type="date" name="tgl_lahir" class="form-control" placeholder="Masukan Tanggal Lahir">
+					<div class="form-group mb-4">
+                    <!-- <label for="password" class="sr-only">Password</label> -->
+                    <input type="text" name="no_hp" class="form-control" placeholder="08xxxxxxxx">
+					<div class="form-group mb-4">
+                    <!-- <label for="password" class="sr-only">Password</label> -->
+                    <input type="password" name="password" class="form-control" placeholder="Masukan Password">
+                  <input style="background-color:#fd7e14" class="btn btn-block login-btn mb-4" type="submit" value="daftar">
+                </form>
+                <a href="#!" class="forgot-password-link">Lupa password?</a>
+                <p class="login-card-footer-text">Sudah punya akun? <a href="<?=base_url('/Auth/login')?>" class="text-reset">Login</a></p>
+                <!-- <nav class="login-card-footer-nav">
+                  <a href="#!">Terms of use.</a>
+                  <a href="#!">Privacy policy</a>
+                </nav> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+  </main>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
 
-			</form>
-		</div>
-	</div>
-
-</div>
-</div>
 <?php $this->load->view('Master/foot'); ?>
