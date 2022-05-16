@@ -29,15 +29,23 @@ class Auth extends CI_Controller
 
     public function addusers()
     {
-        //var_dump($_POST);
-        $data = $_POST;
-        $data += array(
-            'level' => 'tamu'
-        );
-        //var_dump($data);die; 
-        $this->db->insert('users', $data);
-        redirect('/Auth/login');
-    }
+
+		$this->db->where('username', $_POST['username']);
+		$login=$this->db->get('users')->result();
+		if (!empty($login)) {
+			$_SESSION['ipw']="Username Sudah Terdaftar Harap Mengganti Username Anda    ";
+			redirect('/Auth/Register');
+		}else{
+	   	 	$data=$_POST;
+	    	$data += array(
+	        'level' => 'tamu'
+			);
+			// var_dump($data);die;
+    		$this->db->insert('users', $data);
+    		redirect('/Auth/login');
+		}
+
+	}
 
     public function login()
     {
@@ -53,7 +61,8 @@ class Auth extends CI_Controller
         $this->db->where('password', $password);
         $login = $this->db->get('users')->result();
         if (empty($login)) {
-            redirect('/Auth/login');
+            $_SESSION['ipw']="User Tidak Di Temukan Harap mengisi Data Dengan Benar";
+            redirect('/Auth/login');    
         }
         $_SESSION['user'] = $login[0];
         $this->Leving();

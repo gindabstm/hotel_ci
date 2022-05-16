@@ -11,7 +11,7 @@
           <?php else : ?>
             <div scope="col-6">
               <div class="mb-5" style="margin-bottom : 1rem;">
-                <input type="text" name="<?= $key ?>" placeholder="masukan <?= $key ?>" class="form-control" required>
+                <input type="text" name="<?= $key ?>" placeholder="Masukan <?= $key ?>" class="form-control" required>
               </div>
             </div>
           <?php endif ?>

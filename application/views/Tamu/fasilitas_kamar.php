@@ -5,13 +5,13 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                 <h2>Pilih Tipe Kamar</h2>
-                <p>Hotel Hebat menyediakan beberapa kamar yang ada pilih sesuai keinginan anda</p>
+                <p>Hotel Hebat menyediakan beberapa kamar yang bisa anda pilih sesuai keinginan</p>
             </div>
         </div>
 
         <div class="row row-bottom-padded-md">
             <?php foreach ($data as $key => $kamar) : ?>
-                <div class="col-lg-4 col-md-12">
+                <div class="col-md-6"  style="margin-top: 4rem;">
                     <div class="fh5co-blog animate-box">
                         <a href="#"><img class="img-responsive" src="<?= $kamar['Info_kamar']->img_room ?>" alt=""></a>
                         <div class="blog-text">

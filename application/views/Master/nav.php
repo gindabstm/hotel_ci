@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Hotel Hebat</title>
+	<title>HOTEL.HEBAT</title>
 	<link rel="shortcut icon" href="<?= base_url('/dist/') ?>favicon.ico" type="image/x-icon">
 	<link rel="icon" href="<?= base_url('/dist/') ?>favicon.ico" type="image/x-icon">	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,7 +71,7 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-xs-12 text-right">
+					<div class="col-xs-12 text-right" style="color:white;">
 						<?php
 						if (!empty($_SESSION['user'])) {
 							echo $_SESSION['user']->level;
@@ -112,8 +112,8 @@
 									<li><a href="<?= base_url('/Auth/Logout?out=true') ?>">Keluar</a></li>
 								<?php endif; ?>
 							<?php else : ?>
-								<li><a href="<?= base_url('/Auth/Login') ?>">Login</a></li>
-								<li><a href="<?= base_url('/Auth/Register') ?>">Register</a></li>
+								<li><a href="<?= base_url('/Auth/Login') ?>">Masuk</a></li>
+								<li><a href="<?= base_url('/Auth/Register') ?>">Daftar</a></li>
 
 							<?php endif; ?>
 

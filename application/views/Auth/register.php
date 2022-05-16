@@ -1,4 +1,5 @@
 <?php $this->load->view('Master/nav'); ?>
+<?php $this->load->view('Master/alert');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../dist/assets/css/login.css">
+  <link rel="stylesheet" href="../assets/css/login.css">
 </head>
 <body>
 <div id="fh5co-contact">
@@ -19,7 +20,7 @@
       <div class="card login-card">
         <div class="row no-gutters">
           <div class="col-md-5">
-            <img src="../dist/assets/images/baner.jpg" alt="login" class="login-card-img">
+            <img src="../assets/images/baner.jpg" alt="login" class="login-card-img">
           </div>
           <div class="col-md-7">
             <div class="card-body">
@@ -28,7 +29,7 @@
 						<div id="fh5co-logo"><h4><b>HOTEL.HEBAT</b></h4></div>
 				
               </div>
-              <p class="login-card-description">Register</p>
+              <p class="login-card-description">Daftar</p>
               <form method="POST" action="<?= base_url('/Auth/addusers') ?>">
                     <!-- <label for="text" class="sr-only">Username</label> -->
 					<input type="text" name="username" class="form-control" placeholder="Masukan Username">
@@ -50,9 +51,9 @@
 					<div class="form-group mb-4">
                     <!-- <label for="password" class="sr-only">Password</label> -->
                     <input type="password" name="password" class="form-control" placeholder="Masukan Password">
-                  <input style="background-color:#fd7e14" class="btn btn-block login-btn mb-4" type="submit" value="daftar">
+                  <input  class="btn btn-block login-btn mb-4" type="submit" value="Daftar">
                 </form>
-                <p class="login-card-footer-text">Sudah punya akun? <a href="<?=base_url('/Auth/login')?>" class="text-reset">Login</a></p>
+                <p class="login-card-footer-text">Sudah punya akun? <a href="<?=base_url('/Auth/login')?>" class="text-reset">Masuk</a></p>
                 <!-- <nav class="login-card-footer-nav">
                   <a href="#!">Terms of use.</a>
                   <a href="#!">Privacy policy</a>

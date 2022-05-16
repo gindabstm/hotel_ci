@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 11 Bulan Mei 2022 pada 12.52
--- Versi server: 10.4.18-MariaDB
--- Versi PHP: 7.3.27
+-- Generation Time: May 16, 2022 at 04:36 PM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 7.3.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 
 DELIMITER $$
 --
--- Prosedur
+-- Procedures
 --
 CREATE DEFINER=`root`@`localhost` PROCEDURE `simpan_f_hotel` (`id` INT(11), `nama_fasilitas` VARCHAR(255), `img` VARCHAR(255), `desk` VARCHAR(255))  BEGIN
 	insert into f_hotel
@@ -57,7 +57,7 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `data_log`
+-- Table structure for table `data_log`
 --
 
 CREATE TABLE `data_log` (
@@ -67,7 +67,7 @@ CREATE TABLE `data_log` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `data_log`
+-- Dumping data for table `data_log`
 --
 
 INSERT INTO `data_log` (`id`, `data`, `time`) VALUES
@@ -767,12 +767,156 @@ INSERT INTO `data_log` (`id`, `data`, `time`) VALUES
 (696, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"24\",\"username\":\"tae\",\"password\":\"123\",\"Nama\":\"tararafdsfdsfdsf\",\"jenis_kelamin\":\"Perempuan\",\"tgl_lahir\":\"2022-05-01\",\"no_hp\":\"15894456\",\"level\":\"tamu\"}}', '2022-05-11 10:48:30'),
 (697, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"24\",\"username\":\"tae\",\"password\":\"123\",\"Nama\":\"tararafdsfdsfdsf\",\"jenis_kelamin\":\"Perempuan\",\"tgl_lahir\":\"2022-05-01\",\"no_hp\":\"15894456\",\"level\":\"tamu\"}}', '2022-05-11 10:48:58'),
 (698, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":[],\"post\":[]}', '2022-05-11 10:49:01'),
-(699, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Register\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-05-11 10:51:16');
+(699, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Register\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-05-11 10:51:16'),
+(700, '{\"get\":[],\"post\":[]}', '2022-05-14 05:00:19'),
+(701, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-14 05:00:45'),
+(702, '{\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-14 06:09:08'),
+(703, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-14 06:09:25'),
+(704, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-14 06:20:06'),
+(705, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-14 06:30:52'),
+(706, '{\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-14 06:46:31'),
+(707, '{\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-14 06:46:32'),
+(708, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":[],\"post\":[]}', '2022-05-14 06:46:40'),
+(709, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-05-14 06:49:45'),
+(710, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-05-14 06:49:51'),
+(711, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-05-14 06:50:12'),
+(712, '{\"get\":[],\"post\":[]}', '2022-05-14 14:51:31'),
+(713, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-05-14 15:20:45'),
+(714, '{\"get\":[],\"post\":[]}', '2022-05-15 02:19:24'),
+(715, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-15 02:20:26'),
+(716, '{\"get\":[],\"post\":[]}', '2022-05-15 02:21:32'),
+(717, '{\"get\":[],\"post\":[]}', '2022-05-15 02:21:32'),
+(718, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/ref\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-15 02:29:58'),
+(719, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/ref\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-15 02:31:43'),
+(720, '{\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-15 02:31:54'),
+(721, '{\"comefrom\":\"http:\\/\\/localhost\\/hotelkiajadi\\/\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-15 02:32:07'),
+(722, '{\"comefrom\":\"http:\\/\\/localhost\\/hotelkiajadi\\/\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-15 02:32:26'),
+(723, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/?req=Selamat%20Datang%20Di%20Hotel%20Kami\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-15 02:49:10'),
+(724, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/?req=Selamat%20Datang%20Di%20Hotel%20Kami\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-15 02:49:42'),
+(725, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/kontak\",\"get\":[],\"post\":[]}', '2022-05-15 02:49:50'),
+(726, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/resepsionis\\/cari_data?req=%20Cari%20Data\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"14\",\"username\":\"resepsionis\",\"password\":\"12345678\",\"Nama\":\"resepsionis\",\"jenis_kelamin\":\"laki-laki\",\"tgl_lahir\":\"2012-04-03\",\"no_hp\":\"081518651585\",\"level\":\"resepsionis\"}}', '2022-05-15 02:50:24'),
+(727, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/resepsionis\\/cari_data?req=%20Cari%20Data\",\"get\":[],\"post\":[]}', '2022-05-15 02:53:48'),
+(728, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-15 02:53:53'),
+(729, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Resepsionis\\/call?req=Filter%20Pencarian%20Data&t=pemesanan&v=filter\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"3\",\"username\":\"resepsionis\",\"password\":\"123\",\"nama\":\"Abu Jamal\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-04-05\",\"no_telp\":\"083873235897\",\"level\":\"resepsionis\"}}', '2022-05-15 02:57:26'),
+(730, '{\"get\":[],\"post\":[]}', '2022-05-15 03:02:28'),
+(731, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-15 03:03:05'),
+(732, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-15 03:03:10'),
+(733, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Admin\\/add?link=id&val=1&t=F_Hotel&v=add\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-15 03:05:23'),
+(734, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Admin\\/add?link=id&val=1&t=F_Hotel&v=add\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-15 03:05:28'),
+(735, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/admin\\/add?v=allcounter&t=F_Hotel&req=Data%20Traking\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-15 03:06:06'),
+(736, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/admin\\/add?v=allcounter&t=F_Hotel&req=Data%20Traking\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-15 03:08:12'),
+(737, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Resepsionis\\/call?req=Filter%20Pencarian%20Data&t=pemesanan&v=filter\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"3\",\"username\":\"resepsionis\",\"password\":\"123\",\"nama\":\"Abu Jamal\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-04-05\",\"no_telp\":\"083873235897\",\"level\":\"resepsionis\"}}', '2022-05-15 03:09:37'),
+(738, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Resepsionis\\/call?req=Filter%20Pencarian%20Data&t=pemesanan&v=filter\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"3\",\"username\":\"resepsionis\",\"password\":\"123\",\"nama\":\"Abu Jamal\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-04-05\",\"no_telp\":\"083873235897\",\"level\":\"resepsionis\"}}', '2022-05-15 03:17:08'),
+(739, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/ref?req=Book\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-15 03:19:59'),
+(740, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/detailTipe?id=2\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-15 03:27:18'),
+(741, '{\"get\":[],\"post\":[]}', '2022-05-16 00:51:47'),
+(742, '{\"get\":[],\"post\":[]}', '2022-05-16 00:52:25'),
+(743, '{\"get\":[],\"post\":[]}', '2022-05-16 00:52:25'),
+(744, '{\"get\":[],\"post\":[]}', '2022-05-16 00:52:46'),
+(745, '{\"get\":[],\"post\":[]}', '2022-05-16 00:54:00'),
+(746, '{\"get\":[],\"post\":[]}', '2022-05-16 00:54:19'),
+(747, '{\"get\":[],\"post\":[]}', '2022-05-16 00:54:58'),
+(748, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-05-16 00:55:02'),
+(749, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-05-16 00:55:22'),
+(750, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-05-16 00:55:31'),
+(751, '{\"get\":[],\"post\":[]}', '2022-05-16 00:59:36'),
+(752, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-05-16 01:15:17'),
+(753, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"25\",\"username\":\"\",\"password\":\"\",\"Nama\":\"\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"\",\"level\":\"tamu\"}}', '2022-05-16 01:19:23'),
+(754, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":[],\"post\":[]}', '2022-05-16 01:19:30'),
+(755, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"25\",\"username\":\"\",\"password\":\"\",\"Nama\":\"\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"\",\"level\":\"tamu\"}}', '2022-05-16 01:20:02'),
+(756, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":[],\"post\":[]}', '2022-05-16 01:20:05'),
+(757, '{\"get\":[],\"post\":[]}', '2022-05-16 01:20:19'),
+(758, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"25\",\"username\":\"\",\"password\":\"\",\"Nama\":\"\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"\",\"level\":\"tamu\"}}', '2022-05-16 01:20:23'),
+(759, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":[],\"post\":[]}', '2022-05-16 01:20:34'),
+(760, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"25\",\"username\":\"\",\"password\":\"\",\"Nama\":\"\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"\",\"level\":\"tamu\"}}', '2022-05-16 01:20:44'),
+(761, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"25\",\"username\":\"\",\"password\":\"\",\"Nama\":\"\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"\",\"level\":\"tamu\"}}', '2022-05-16 01:20:45'),
+(762, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":[],\"post\":[]}', '2022-05-16 01:21:02'),
+(763, '{\"get\":[],\"post\":[]}', '2022-05-16 01:21:05'),
+(764, '{\"get\":[],\"post\":[]}', '2022-05-16 01:21:06'),
+(765, '{\"get\":[],\"post\":[]}', '2022-05-16 01:21:22'),
+(766, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"25\",\"username\":\"\",\"password\":\"\",\"Nama\":\"\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"\",\"level\":\"tamu\"}}', '2022-05-16 01:21:32'),
+(767, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"25\",\"username\":\"\",\"password\":\"\",\"Nama\":\"\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"\",\"level\":\"tamu\"}}', '2022-05-16 01:21:49'),
+(768, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":[],\"post\":[]}', '2022-05-16 01:21:50'),
+(769, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":[],\"post\":[]}', '2022-05-16 01:21:52'),
+(770, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"26\",\"username\":\"\",\"password\":\"\",\"Nama\":\"\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"\",\"level\":\"tamu\"}}', '2022-05-16 01:28:14'),
+(771, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":[],\"post\":[]}', '2022-05-16 01:28:16'),
+(772, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Register\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-05-16 01:29:52'),
+(773, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"26\",\"username\":\"\",\"password\":\"\",\"Nama\":\"\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"\",\"level\":\"tamu\"}}', '2022-05-16 01:30:23'),
+(774, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":[],\"post\":[]}', '2022-05-16 01:30:24'),
+(775, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":[],\"post\":[]}', '2022-05-16 01:30:25'),
+(776, '{\"get\":[],\"post\":[]}', '2022-05-16 01:31:14'),
+(777, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-05-16 01:34:55'),
+(778, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"26\",\"username\":\"\",\"password\":\"\",\"Nama\":\"\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"\",\"level\":\"tamu\"}}', '2022-05-16 01:56:03'),
+(779, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":[],\"post\":[]}', '2022-05-16 02:03:50'),
+(780, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 02:03:56'),
+(781, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/ref?req=Book\",\"get\":[],\"post\":[]}', '2022-05-16 02:13:48'),
+(782, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Resepsionis\\/call?req=Filter%20Pencarian%20Data&t=pemesanan&v=filter\",\"get\":[],\"post\":[]}', '2022-05-16 02:27:52'),
+(783, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"26\",\"username\":\"\",\"password\":\"\",\"Nama\":\"\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"\",\"level\":\"tamu\"}}', '2022-05-16 02:27:55'),
+(784, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 07:13:43'),
+(785, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":[],\"post\":[]}', '2022-05-16 07:17:06'),
+(786, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-16 07:17:13'),
+(787, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-16 07:17:16'),
+(788, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/?req=Selamat%20Datang%20Di%20Hotel%20Kami\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-16 07:17:30'),
+(789, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[]}', '2022-05-16 07:18:35'),
+(790, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 07:18:43'),
+(791, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/admin\\/add?v=allcounter&t=Tipe_room&req=Data%20Traking\",\"get\":[],\"post\":[]}', '2022-05-16 07:19:47'),
+(792, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Resepsionis\\/call?req=Filter%20Pencarian%20Data&t=pemesanan&v=filter\",\"get\":[],\"post\":[]}', '2022-05-16 07:26:39'),
+(793, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-16 07:26:47'),
+(794, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/admin\\/add?v=allcounter&t=F_Hotel&req=Data%20Traking\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-16 07:27:19'),
+(795, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/admin\\/add?v=allcounter&t=F_Hotel&req=Data%20Traking\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-16 07:27:45'),
+(796, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/admin\\/add?v=allcounter&t=F_Hotel&req=Data%20Traking\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-16 07:28:14'),
+(797, '{\"get\":[],\"post\":[]}', '2022-05-16 07:42:20'),
+(798, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 07:42:28'),
+(799, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 08:03:26'),
+(800, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/admin\\/add?v=allcounter&t=F_Hotel&req=Data%20Traking\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-16 08:04:21'),
+(801, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 08:07:18'),
+(802, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 08:07:19'),
+(803, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 08:07:20'),
+(804, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 08:07:20'),
+(805, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 08:07:20'),
+(806, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 08:07:21'),
+(807, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/admin\\/add?v=allcounter&t=Tipe_room&req=Data%20Traking\",\"get\":[],\"post\":[]}', '2022-05-16 08:10:04'),
+(808, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 08:10:12'),
+(809, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/admin\\/add?v=allcounter&t=Tipe_room&req=Data%20Traking\",\"get\":[],\"post\":[]}', '2022-05-16 08:10:39'),
+(810, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 08:11:28'),
+(811, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 08:11:42'),
+(812, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 08:11:59'),
+(813, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 08:13:01'),
+(814, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-05-16 08:13:57'),
+(815, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-05-16 08:16:02'),
+(816, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-05-16 08:30:06'),
+(817, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 08:30:11'),
+(818, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/kontak\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 08:31:51'),
+(819, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/ref?req=Book\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 08:32:01'),
+(820, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/?req=Selamat%20Datang%20Di%20Hotel%20Kami\",\"get\":[],\"post\":[]}', '2022-05-16 08:32:06'),
+(821, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Register\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-05-16 08:35:21'),
+(822, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"27\",\"username\":\"asd\",\"password\":\"\",\"Nama\":\"\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"\",\"level\":\"tamu\"}}', '2022-05-16 10:14:23'),
+(823, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":[],\"post\":[]}', '2022-05-16 10:16:52'),
+(824, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"28\",\"username\":\"0035755888\",\"password\":\"\",\"Nama\":\"\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"\",\"level\":\"tamu\"}}', '2022-05-16 10:20:30'),
+(825, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/\",\"get\":[],\"post\":[]}', '2022-05-16 10:20:52'),
+(826, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/login\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[]}', '2022-05-16 10:22:58'),
+(827, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":[],\"post\":[]}', '2022-05-16 10:28:16'),
+(828, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-16 10:28:30'),
+(829, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-16 10:30:53'),
+(830, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Resepsionis\\/call?req=Filter%20Pencarian%20Data&t=pemesanan&v=filter\",\"get\":[],\"post\":[]}', '2022-05-16 10:33:39'),
+(831, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-16 10:33:44'),
+(832, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Admin\\/add?link=id&val=18&t=F_kamar&v=add\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-16 10:37:05'),
+(833, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/admin\\/add?v=allcounter&t=F_kamar&req=Data%20Traking\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-16 10:42:09'),
+(834, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/?req=Selamat%20Datang%20Di%20Hotel%20Kami\",\"get\":[],\"post\":[]}', '2022-05-16 10:42:11'),
+(835, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Admin\\/add?link=id&val=18&t=F_kamar&v=add\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-16 11:15:24'),
+(836, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/admin\\/add?v=allcounter&t=Tipe_room&req=Data%20Traking\",\"get\":[],\"post\":[]}', '2022-05-16 11:15:57'),
+(837, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 13:22:56'),
+(838, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Resepsionis\\/call?req=Filter%20Pencarian%20Data&t=pemesanan&v=filter\",\"get\":[],\"post\":[]}', '2022-05-16 13:31:53'),
+(839, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Auth\\/Login\",\"get\":[],\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-16 13:32:13'),
+(840, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/admin\\/add?v=allcounter&t=F_kamar&req=Data%20Traking\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"7\",\"username\":\"admin\",\"password\":\"12345678\",\"Nama\":\"admin\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"0000-00-00\",\"no_hp\":\"081221823861\",\"level\":\"admin\"}}', '2022-05-16 13:52:20'),
+(841, '{\"get\":[],\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 13:53:07'),
+(842, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Tamu\\/TipeKamar?req=Tipe%20Kamar%20Pilihanmu\",\"get\":{\"req\":\"Selamat Datang Di Hotel Kami\"},\"post\":[],\"user\":{\"id_login\":\"19\",\"username\":\"gin\",\"password\":\"123\",\"Nama\":\"Ginda Bustomi\",\"jenis_kelamin\":\"Laki-Laki\",\"tgl_lahir\":\"2003-07-15\",\"no_hp\":\"0895635198512\",\"level\":\"tamu\"}}', '2022-05-16 14:09:10'),
+(843, '{\"comefrom\":\"http:\\/\\/localhost\\/hotel\\/Admin\\/add?link=id&val=18&t=F_kamar&v=add\",\"get\":[],\"post\":[]}', '2022-05-16 14:10:24');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `f_hotel`
+-- Table structure for table `f_hotel`
 --
 
 CREATE TABLE `f_hotel` (
@@ -783,19 +927,21 @@ CREATE TABLE `f_hotel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `f_hotel`
+-- Dumping data for table `f_hotel`
 --
 
 INSERT INTO `f_hotel` (`id`, `nama_fasilitas`, `img`, `deks`) VALUES
 (1, 'Kolam Renang', 'https://images.unsplash.com/photo-1623718649591-311775a30c43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80', 'Kolam renang luar ruangan ini dirancang untuk tamu dewasa dan dikelilingi taman tropis yang indah'),
-(2, 'Lagoon Cafe', 'https://media.istockphoto.com/photos/3d-rendering-nice-restaurant-with-elegant-decoration-picture-id588377956?b=1&k=20&m=588377956&s=170667a&w=0&h=efrsngiUVBrpOOJfj6Igpw8kVteT-twX5Q0PLHlnB1w=', 'Menyajikan hidangan prasmanan dan a la carte lengkap dengan menu Indonesia dan Internasional'),
-(4, 'Lagoon Spa', 'https://media.istockphoto.com/photos/man-and-woman-lying-down-on-massage-beds-at-asian-wellness-center-picture-id875640820?b=1&k=20&m=875640820&s=170667a&w=0&h=M85Lk4k2Puy_QnsGuGtkBycjlfINonPzHcYq3sB2z9A=', 'Berbagai perawatan dirancang khusus untuk memenuhi keinginan akan kenyamanan diseluruh tubuh, pijat, manicure dan pedicure'),
-(5, 'Taman', 'https://images.unsplash.com/photo-1618582240632-1937f4c91d7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80', 'Taman hotel yang bisa anda nikmati, terdapat tanaman-tanaman hias yang bisa menyegearkan mata.');
+(2, 'Cafe', 'https://media.istockphoto.com/photos/3d-rendering-nice-restaurant-with-elegant-decoration-picture-id588377956?b=1&k=20&m=588377956&s=170667a&w=0&h=efrsngiUVBrpOOJfj6Igpw8kVteT-twX5Q0PLHlnB1w=', 'Menyajikan hidangan prasmanan dan ala carte lengkap dengan menu Indonesia dan Internasional'),
+(4, 'Spa', 'https://media.istockphoto.com/photos/man-and-woman-lying-down-on-massage-beds-at-asian-wellness-center-picture-id875640820?b=1&k=20&m=875640820&s=170667a&w=0&h=M85Lk4k2Puy_QnsGuGtkBycjlfINonPzHcYq3sB2z9A=', 'Berbagai perawatan dirancang khusus untuk memenuhi keinginan akan kenyamanan diseluruh tubuh, pijat, manicure dan pedicure'),
+(5, 'Taman', 'https://images.unsplash.com/photo-1618582240632-1937f4c91d7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80', 'Taman hotel yang bisa anda nikmati, terdapat tanaman-tanaman hias yang bisa menyegearkan mata'),
+(6, 'Pelayanan prima', 'https://d37j6posq2fmgz.cloudfront.net/resources/3308,5,1,6,3,0/-4601-/20160418153941/receptionist.jpeg', 'HOTEL.HEBAT memberikan pelayanan yang prima untuk memaksimalkan kepuasan para tamu. Para tamu juga bisa menikmati fasilitas hotel lainnya'),
+(7, ' Servis antar dan valet parking', 'https://images.unsplash.com/photo-1637245057252-ba70fa548d33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80', 'Bagi kamu yang nggak mau repot membawa barang serta memarkir kendaraan, HOTEL.HEBAT membantu kamu memarkir kendaraan serta membawa barang');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `f_kamar`
+-- Table structure for table `f_kamar`
 --
 
 CREATE TABLE `f_kamar` (
@@ -807,20 +953,28 @@ CREATE TABLE `f_kamar` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `f_kamar`
+-- Dumping data for table `f_kamar`
 --
 
 INSERT INTO `f_kamar` (`id`, `id_tipekamar`, `nama_fasilitas`, `kategori`, `img`) VALUES
-(18, 1, 'Tv LED 42 inc', 'Eletronik', 'https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80'),
+(18, 1, 'Tv LED 32 inc', 'Eletronik', 'https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80'),
 (19, 2, 'Tv LED 42 inc', 'Elektronik', 'https://images.unsplash.com/photo-1558888401-3cc1de77652d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80'),
 (20, 1, 'Kamar mandi', 'room', 'https://images.unsplash.com/photo-1587527901949-ab0341697c1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'),
 (21, 2, 'Kamar mandi', 'room', 'https://images.unsplash.com/photo-1586798271654-0471bb1b0517?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1370&q=80'),
-(24, 8, 'Kamar Mandi', 'room', 'https://images.unsplash.com/photo-1467043153537-a4fba2cd39ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=719&q=80');
+(24, 8, 'Kamar Mandi', 'room', 'https://images.unsplash.com/photo-1467043153537-a4fba2cd39ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=719&q=80'),
+(41, 1, 'Lemari Pakaian', 'Furnitur', 'https://images.unsplash.com/photo-1558997519-83ea9252edf8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'),
+(42, 2, 'Lemari Pakaian', 'Furnitur', 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'),
+(43, 1, 'AC', 'Elektronik', 'https://media-cdn.tripadvisor.com/media/photo-s/0d/22/4e/86/ac-split.jpg'),
+(44, 2, 'AC', 'Elektronik', 'https://media-cdn.tripadvisor.com/media/photo-s/0d/22/4e/86/ac-split.jpg'),
+(45, 1, 'WIFI', 'Elektronik', 'https://asset.kompas.com/crops/n_w1yNKkdW1637pxuBdJMGHm9tk=/0x185:1000x851/750x500/data/photo/2018/06/21/31472002711.jpg'),
+(46, 2, 'WIFI', 'Elektronik', 'https://asset.kompas.com/crops/n_w1yNKkdW1637pxuBdJMGHm9tk=/0x185:1000x851/750x500/data/photo/2018/06/21/31472002711.jpg'),
+(47, 1, 'Kasur 180 x 200', 'Furnitur', 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'),
+(48, 2, 'Kasur 200 x 200', 'Furnitur', 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pemesanan`
+-- Table structure for table `pemesanan`
 --
 
 CREATE TABLE `pemesanan` (
@@ -841,31 +995,15 @@ CREATE TABLE `pemesanan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `pemesanan`
+-- Dumping data for table `pemesanan`
 --
 
 INSERT INTO `pemesanan` (`id_pesanan`, `nama_pemesan`, `email`, `no_hp`, `nama_tamu`, `id_kamar`, `tgl_cekin`, `tgl_cekout`, `jml_kamar`, `Harga`, `PayBay`, `PayEnd`, `Status_Kamar`, `RefPB`) VALUES
-(40, 'welcome', 'welcome@gmail.com', '0815858651890', 'welcome', 1, '2022-04-10', '2022-04-11', 1, 1000000, 'Transfer Bank', 1, '0', '041022Transfer Bank170828'),
-(41, 'welcome 2', 'cobadulu2@gmail.com', '0815858651891', 'welcome 2', 1, '2022-04-10', '2022-04-11', 3, 3000000, 'Transfer Bank', 0, '0', '041022Transfer Bank170836'),
-(42, 'welcome 22e', 'ginda123@gmail.com', '0815858651891', 'welcome 22e', 2, '2022-04-10', '2022-04-16', 1, 20000, 'E-wallet(Dana-ovo)', 0, '0', '041022E-wallet(Dana-ovo)171413'),
-(43, 'welcome 22e', 'ginda123@gmail.com', '0815858651891', 'welcome 22e', 2, '2022-04-10', '2022-04-16', 1, 20000, 'E-wallet(Dana-ovo)', 0, '0', '041022E-wallet(Dana-ovo)171700'),
-(44, 'welcome 22e', 'welcome@gmail.com', '0815858651891', 'welcome 22e', 1, '2022-03-18', '2022-04-19', 1, 1000000, 'Transfer Bank', 0, '0', '041022Transfer Bank171904'),
-(45, 'welcome', 'welcome@gmail.com', '0815858651891', 'welcome', 1, '2022-04-11', '2022-04-12', 1, 1000000, 'Transfer Bank', 0, '0', '041022Transfer Bank172213'),
-(46, 'welcome', 'ginda123@gmail.com', '0815858651891', 'welcome', 2, '2022-04-10', '2022-04-11', 1, 20000, 'Transfer Bank', 0, '0', '041022Transfer Bank174921'),
-(55, 'welcome', 'ginda123@gmail.com', '0815858651891', 'welcome', 1, '2022-04-11', '2022-04-12', 1, 100000, 'Transfer Bank', 1, 'Cekin', '041122Transfer Bank102859'),
-(56, 'welcome', 'ginda123@gmail.com', '0815858651891', 'welcome', 1, '2022-04-11', '2022-04-12', 1, 100000, 'Transfer Bank', 0, '0', '041122Transfer Bank103020'),
-(57, 'ginda bustomi', '', '0815858651891', '', 7, '0000-00-00', '0000-00-00', 0, 0, 'Transfer Bank', 0, '0', '041122Transfer Bank103045'),
-(58, 'GINDUL', 'gindul@gmail.com', '08158696574', 'Ginda Bustomi', 2, '2022-04-11', '2022-04-12', 1, 20000, 'Virtual Account', 0, '0', '041122Virtual Account160755'),
-(59, 'GINDUL', 'ginda123@gmail.com', '08158696574', 'Ginda Bustomi', 1, '2022-04-11', '2022-04-12', 1, 500000, 'Virtual Account', 0, '0', '041122Virtual Account175158'),
-(60, 'GINDUL', 'ginda123@gmail.com', '08158696574', 'Ginda Bustomi', 1, '2022-04-13', '2022-04-16', 2, 1000000, 'Transfer Bank', 0, '0', '041122Transfer Bank175238'),
-(61, 'GINDUL', 'ginda123@gmail.com', '08158696574', 'ginda coba2', 1, '2022-04-12', '2022-04-12', 1, 500000, 'Transfer Bank', 0, '0', '041122Transfer Bank183507'),
-(62, 'welcome 22e', 'ginda123@gmail.com', '081585586958', 'welcome 22e', 1, '2022-04-13', '2022-04-12', 1, 500000, 'Transfer Bank', 1, '0', '041122Transfer Bank185028'),
-(63, 'welcome', 'ginda123@gmail.com', '0815858651890', 'welcome', 1, '2022-04-13', '2022-04-14', 1, 500000, 'E-wallet(Dana-ovo)', 0, '0', '041222E-wallet(Dana-ovo)000757'),
-(64, 'welcome', 'ginda123@gmail.com', '0815858651891', 'welcome', 1, '2022-04-12', '2022-04-13', 1, 500000, 'Transfer Bank', 0, '0', '041222Transfer Bank001252'),
-(76, 'Ginda Bustomi', 'lamohlouis12@gmail.com', '0895635198512', 'HIDAN', 1, '2022-04-19', '2022-04-20', 1, 500000, 'Transfer Bank', 1, 'Cekin', '041922Transfer Bank062027');
+(84, 'Ginda Bustomi', 'ginda1@gmail.com', '0895635198512', 'ginda', 1, '2022-05-16', '2022-05-18', 1, 1500000, 'Transfer Bank', 0, '0', '051622Transfer Bank152322'),
+(85, 'Ginda Bustomi', 'ginda1@gmail.com', '0895635198512', 'ginda', 1, '2022-05-16', '2022-05-17', 5, 5000000, 'Transfer Bank', 1, 'Cekin', '051622Transfer Bank152519');
 
 --
--- Trigger `pemesanan`
+-- Triggers `pemesanan`
 --
 DELIMITER $$
 CREATE TRIGGER `Update Stok` AFTER INSERT ON `pemesanan` FOR EACH ROW UPDATE
@@ -885,7 +1023,7 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tipe_room`
+-- Table structure for table `tipe_room`
 --
 
 CREATE TABLE `tipe_room` (
@@ -899,18 +1037,17 @@ CREATE TABLE `tipe_room` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `tipe_room`
+-- Dumping data for table `tipe_room`
 --
 
 INSERT INTO `tipe_room` (`id`, `Nama_room`, `harga`, `Stok`, `onuse`, `onbook`, `img_room`) VALUES
-(1, 'Superior', 500000, -2, 0, 0, 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'),
-(2, 'Deluxe', 700000, 95, 0, 0, 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'),
-(8, 'Superior Duoble', 1000000, 10, 0, 0, 'https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+(1, 'Superior', 500000, 60, 0, 0, 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'),
+(2, 'Deluxe', 700000, 54, 0, 0, 'https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -925,99 +1062,94 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id_login`, `username`, `password`, `Nama`, `jenis_kelamin`, `tgl_lahir`, `no_hp`, `level`) VALUES
 (7, 'admin', '12345678', 'admin', 'Laki-Laki', '0000-00-00', '081221823861', 'admin'),
 (14, 'resepsionis', '12345678', 'resepsionis', 'laki-laki', '2012-04-03', '081518651585', 'resepsionis'),
-(19, 'gin', '123', 'Ginda Bustomi', 'Laki-Laki', '2003-07-15', '0895635198512', 'tamu'),
-(20, 'gin', '123', 'Muhamad Arief Nur Cahyo', 'Laki-Laki', '2022-04-19', '08945321958485', 'tamu'),
-(21, 'asdffasafs', 'T4cBTWe656LcQMe', 'asfasfasfas', 'Laki-Laki', '2022-05-01', '26594918915', 'tamu'),
-(22, 'ads', '123', '', '', '0000-00-00', '', 'tamu'),
-(23, 'adas', '123', '', '', '0000-00-00', '', 'tamu'),
-(24, 'tae', '123', 'tararafdsfdsfdsf', 'Perempuan', '2022-05-01', '15894456', 'tamu');
+(19, 'gin', '123', 'Ginda Bustomi', 'Laki-Laki', '2003-07-15', '0895635198512', 'tamu');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `data_log`
+-- Indexes for table `data_log`
 --
 ALTER TABLE `data_log`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `f_hotel`
+-- Indexes for table `f_hotel`
 --
 ALTER TABLE `f_hotel`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `f_kamar`
+-- Indexes for table `f_kamar`
 --
 ALTER TABLE `f_kamar`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `pemesanan`
+-- Indexes for table `pemesanan`
 --
 ALTER TABLE `pemesanan`
   ADD PRIMARY KEY (`id_pesanan`),
   ADD KEY `id_kamar` (`id_kamar`);
 
 --
--- Indeks untuk tabel `tipe_room`
+-- Indexes for table `tipe_room`
 --
 ALTER TABLE `tipe_room`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id_login`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `data_log`
+-- AUTO_INCREMENT for table `data_log`
 --
 ALTER TABLE `data_log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=700;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=844;
 
 --
--- AUTO_INCREMENT untuk tabel `f_hotel`
+-- AUTO_INCREMENT for table `f_hotel`
 --
 ALTER TABLE `f_hotel`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT untuk tabel `f_kamar`
+-- AUTO_INCREMENT for table `f_kamar`
 --
 ALTER TABLE `f_kamar`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
--- AUTO_INCREMENT untuk tabel `pemesanan`
+-- AUTO_INCREMENT for table `pemesanan`
 --
 ALTER TABLE `pemesanan`
-  MODIFY `id_pesanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
+  MODIFY `id_pesanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
 
 --
--- AUTO_INCREMENT untuk tabel `tipe_room`
+-- AUTO_INCREMENT for table `tipe_room`
 --
 ALTER TABLE `tipe_room`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT untuk tabel `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_login` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id_login` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

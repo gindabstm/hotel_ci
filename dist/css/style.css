@@ -330,7 +330,7 @@ h1, h2, h3, h4, h5, h6, figure {
   transition: 0.5s;
 }
 .fh5co-video:hover .overlay {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 0, 0, 0.7);
 }
 .fh5co-video:hover a {
   -webkit-transform: scale(1.2);
@@ -947,7 +947,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background: transparent;
 }
 #fh5co-portfolio-list li a:hover:before {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(255, 0, 0, 0.5);
 }
 #fh5co-portfolio-list li a .case-studies-summary {
   width: auto;

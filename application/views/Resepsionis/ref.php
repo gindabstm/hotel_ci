@@ -9,12 +9,12 @@
 			<div class="row">
 				<?php $data['book'] = array_reverse($data['book']);
 				foreach ($data['book'] as $key => $item) : ?>
-					<div class="col-md-12">
+					<div class="col-md-12" style="text-align:left;">
 						<div class="">
 							<img src="<?= $item->img_room ?>" class="card-img-top" alt="<?= $item->img_room ?>">
 							<div class="col-md-12 mt-5">
 								<strong>
-									<h3 class=""><?= $item->Nama_room ?> x <?= $item->jml_kamar ?> Kamar </h3>
+									<h3 class="" ><?= $item->Nama_room ?> x <?= $item->jml_kamar ?> Kamar </h3>
 								</strong>
 								<p>Nama Tamu = <?= $item->nama_tamu ?></p>
 								<p>Tanggal Cekin = <?= $item->tgl_cekin ?></p>
@@ -23,9 +23,9 @@
 								<p>Sistem pembayaran = <?= $item->PayBay ?></p>
 								<p>Pembayaran =
 									<?php if ($item->PayEnd == 0) {
-										$pesan = 'belum di Bayar';
+										$pesan = 'Belum di Bayar';
 									} else {
-										$pesan = 'sudah di bayar';
+										$pesan = 'Sudah di bayar';
 									}
 									echo $pesan;
 									?>
@@ -40,14 +40,14 @@
 								<?php else : ?>
 									<?php if (date('Y-m-d') >= $item->tgl_cekin && date('Y-m-d') <= $item->tgl_cekout) : ?>
 										<?php if ($item->Status_Kamar == "Cekin") : ?>
-											<p class="text-primary">Telah Melakukan CekIn Cekout Pada <?= $item->tgl_cekout ?>
+											<p class="text-primary">Telah Melakukan Cekin Cekout Pada <?= $item->tgl_cekout ?>
 											</p>
 										<?php else : ?>
-											<a href="<?= base_url('/Resepsionis/payed?id=') . $item->id_pesanan . '&f=Status_Kamar&v=Cekin' ?>" class="btn btn-warning">Cek In</a>
+											<a href="<?= base_url('/Resepsionis/payed?id=') . $item->id_pesanan . '&f=Status_Kamar&v=Cekin' ?>" class="btn btn-primary">Cek In</a>
 										<?php endif ?>
 									<?php elseif (date('Y-m-d') == $item->tgl_cekout) : ?>
 									<?php elseif (date('Y-m-d') > $item->tgl_cekout) : ?>
-										<p class="text-danger">Tidak / Terlambak Cek Out</p>
+										<p class="text-danger">Tidak / Terlambat Cek Out</p>
 									<?php endif; ?>
 								<?php endif; ?>
 							</div>

@@ -23,7 +23,9 @@ class Admin extends CI_Controller
         $t = $_GET['t'];
         if (!empty($_POST)) {
             $this->db->insert($_GET['t'], $_POST);
-            echo "<h1>Behasil Di Tambahkan</h1>";
+            echo '<script type ="text/JavaScript">';  
+            echo 'alert("Data Berhasil Di Tambahkan")';  
+            echo '</script>';  
         }
         $t = $this->db->get($t)->result();
         $this->load->view('Admin/' . $view, ['data' => $t]);

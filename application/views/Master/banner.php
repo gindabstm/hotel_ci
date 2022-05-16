@@ -5,8 +5,8 @@
 			<div class="col-md-8 col-md-offset-2 text-center">
 				<div class="display-t">
 					<div class="display-tc animate-box" data-animate-effect="fadeIn">
-						<h1>Hotel Hebat</h1>
-						<h2>Selamat Datang Di Hotel Hebat Kami Menyambutmu dengan Hangat</h2>
+						<h1>HOTEL.HEBAT</h1>
+						<h2>Selamat Datang Di Hotel Hebat Kami Menyambutmu Dengan Hangat</h2>
 						<!-- <p><a href="<?= base_url('/Auth/login') ?>" class="btn btn-primary">Booking</a></p>  -->
 					</div>
 				</div>

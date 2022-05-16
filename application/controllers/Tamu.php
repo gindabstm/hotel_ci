@@ -79,11 +79,14 @@ class Tamu extends CI_Controller
     public function prosesBooking()
     {
 
-
+        $tgl1 = strtotime($_POST['tgl_cekin']);
+        $tgl2 = strtotime($_POST['tgl_cekout']);
+        $jarak = $tgl2 - $tgl1;
+        $hari = $jarak / 60 / 60 / 24 +1;
         $this->db->where('id', $_POST['id_kamar']);
         $tipe_kamar = $this->db->get('tipe_room')->result();
         //var_dump($tipe_kamar);die;
-        $total_harga = $_POST['jml_kamar'] * $tipe_kamar[0]->harga;
+        $total_harga = $_POST['jml_kamar'] * $tipe_kamar[0]->harga*$hari;
         //var_dump($total_harga);
 
         $data = array(
@@ -117,7 +120,7 @@ class Tamu extends CI_Controller
         $this->load->view('Tamu/print', ['data' => $data]);
     }
 
-    public function batal()
+    public function batal() 
     {
         $id = $_GET['id'];
         $this->db->where('id_pesanan', $id);
