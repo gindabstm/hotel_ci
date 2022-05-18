@@ -48,11 +48,12 @@ foreach ($data[0] as $key => $value) {
 										</th>
 									<?php endforeach; ?>
 									<th scope="col">
-										<button type="sub" class="btn btn-primary">Ubah</button>
-
-										<a href="<?= base_url('/Admin/remove?id=' . $lqw1 . '&t=' . $_GET['t'] . '&f=' . $lqw2); ?>" class="btn btn-danger">Hapus</a>
+										<button type="sub" onclick="return confirm('Yakin ubah data ini?')" class="btn btn-primary">Ubah</button>
+										<!-- <a href="#modalUpdate" data-toggle="modal" onclick="$('#modalUpdate #formUpdate').attr('action', '<?= base_url('/Admin/update?link=' . $key2 . '&val=' . $value2 . '&t=' . $_GET['t']) ?>')" class="btn btn-primary">Ubah</a> -->
+										<!-- <a href="<?= base_url('/Admin/remove?id=' . $lqw1 . '&t=' . $_GET['t'] . '&f=' . $lqw2); ?>" onclick="return confirm('Yakin hapus data ini?')" class="btn btn-danger">Hapus</a> -->
+										<a href="#modalDelete" data-toggle="modal" onclick="$('#modalDelete #formDelete').attr('action', '<?= base_url('/Admin/remove?id=' . $lqw1 . '&t=' . $_GET['t'] . '&f=' . $lqw2); ?>')" class="btn btn-danger">Hapus</a>
 									</th>
-							</tr>
+								</tr>
 							</form>
 						<?php endforeach; ?>
 					</tbody>
@@ -62,5 +63,24 @@ foreach ($data[0] as $key => $value) {
 	</div>
 </div>
 
+
+<div class="modal fade" id="modalDelete">
+	<div class="modal-dialog">
+		<div class="modal-content" >
+			<div class="modal-header">
+			<h4 class="modal-title">Yakin akan menghapus data ini?</h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-footer">
+				<form id="formDelete" action="" method="post">
+					<button class="btn btn-danger" data-dismiss="submit">Hapus</button>
+					<button class="btn btn-default" data-dismiss="modal">Tidak</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
 
 <?php $this->load->view('Master/foot'); ?>

@@ -18,7 +18,7 @@
         <?php $i++;
       endforeach ?>
         <div scope="col-12">
-          <button type="submit" class="btn btn-primary">Kirim</button>
+          <button type="submit" class="btn btn-primary" style="margin-bottom:10px;">Kirim</button>
         </div>
           </form>
     </div>

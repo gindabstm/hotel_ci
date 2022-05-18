@@ -33,11 +33,11 @@
                   <div class="form-group">
                     <!-- <label for="text" class="sr-only">Username</label> -->
                     <p class="mt-3">Username</p>
-                    <input type="text" name="username" class="form-control" placeholder="Masukan Username">
+                    <input type="text" name="username" class="form-control" placeholder="Masukan Username" required>
                   <div class="form-group mb-4">
                     <!-- <label for="password" class="sr-only">Password</label> -->
                     <p class="mt-3">Password</p>
-                    <input type="password" name="password" class="form-control" id="myInput" placeholder="Masukan Password">
+                    <input type="password" name="password" class="form-control" id="myInput" placeholder="Masukan Password" required>
                     <script>
                         var as=document.getElementsByClassName('<?=$currentURL?>')[0].classList.toggle('btn btn-primary')
                     </script>

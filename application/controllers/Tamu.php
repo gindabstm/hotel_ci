@@ -112,16 +112,71 @@ class Tamu extends CI_Controller
         //var_dump($tipe_kamar);die; 
     }
 
+    public function idopin($produk1,$quantity1,$priceone1)
+    	{
+    			$produk=[$produk1];
+    			$quantity=[$quantity1];
+    			$priceone=[$priceone1];
+		        $va           = '0000000815183974'; //get on iPaymu dashboard
+		        $secret       = 'SANDBOXC67328B7-78E9-46CA-BF78-B215F403FBE8-20220519004336'; //get on iPaymu dashboard
+		        $url          = 'https://sandbox.ipaymu.com/api/v2/payment'; //url
+		        $method       = 'POST'; //method
+		        $body['product']    = $produk;
+		        $body['qty']        = $quantity;
+		        $body['price']      = $priceone;
+		        $body['returnUrl']  = base_url('/Tamu/ref');
+		        $body['cancelUrl']  = base_url('/');
+		        $body['notifyUrl']  = base_url('/Tamu/ref');
+		        $jsonBody     = json_encode($body, JSON_UNESCAPED_SLASHES);
+		        $requestBody  = strtolower(hash('sha256', $jsonBody));
+		        $stringToSign = strtoupper($method) . ':' . $va . ':' . $requestBody . ':' . $secret;
+		        $signature    = hash_hmac('sha256', $stringToSign, $secret);
+		        $timestamp    = Date('YmdHis');
+		        $ch = curl_init($url);
+		        $headers = array(
+		            'Accept: application/json',
+		            'Content-Type: application/json',
+		            'va: ' . $va,
+		            'signature: ' . $signature,
+		            'timestamp: ' . $timestamp
+		        );
+
+		        curl_setopt($ch, CURLOPT_HEADER, false);
+		        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+		        curl_setopt($ch, CURLOPT_POST, count($body));
+		        curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonBody);
+
+		        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+		        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+		        $err = curl_error($ch);
+		        $ret = curl_exec($ch);
+		        curl_close($ch);
+		        if($err) {
+		            var_dump($err);
+		        } else {
+		            $ret = json_decode($ret);
+		            if($ret->Status == 200) {
+		                $sessionId  = $ret->Data->SessionID;
+		                $url        =  $ret->Data->Url;
+		                redirect($url);
+		            } else {
+		                var_dump($ret);
+		            }
+		        }
+	}
+
     public function prosesBooking()
     {
 
         $tgl1 = strtotime($_POST['tgl_cekin']);
         $tgl2 = strtotime($_POST['tgl_cekout']);
         $jarak = $tgl2 - $tgl1;
-        $hari = $jarak / 60 / 60 / 24 +1;
+        $hari = $jarak / 60 / 60 / 24 ;
         $this->db->where('id', $_POST['id_kamar']);
         $tipe_kamar = $this->db->get('tipe_room')->result();
-        //var_dump($tipe_kamar);die;
+        // var_dump($hari);die;
         $total_harga = $_POST['jml_kamar'] * $tipe_kamar[0]->harga*$hari;
         //var_dump($total_harga);
 
@@ -141,7 +196,13 @@ class Tamu extends CI_Controller
             'RefPB' => date('mdy') . $_POST['PayBay'] . date('His')
         );
         $this->db->insert('pemesanan', $data);
-        redirect('/Tamu/ref');
+        if ($_POST['PayBay']=='Transfer'){
+            $binpas=$tipe_kamar[0]->Nama_room.' sebanyak'.$_POST['jml_kamar']. 'selama'.$hari. 'hari - total Harga ='.$total_harga;
+            $this->idopin($binpas,1,$total_harga);
+        }else{
+            redirect('/Tamu/ref');
+        }
+        
     }
 
     public function print()

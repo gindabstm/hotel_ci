@@ -33,30 +33,30 @@
               <form method="POST" action="<?= base_url('/Auth/addusers') ?>">
                     <!-- <label for="text" class="sr-only">Username</label> -->
                     <p class="mt-3">Username</p>
-					<input type="text" name="username" class="form-control" placeholder="Masukan Username">
+					<input type="text" name="username" class="form-control" placeholder="Masukan Username" required>
                   <div class="form-group mb-4">
                     <!-- <label for="password" class="sr-only">Password</label> -->
                     <p class="mt-3">Nama Lengkap</p>
-					<input type="text" name="Nama" class="form-control" placeholder="Masukan Nama Lengkap	">
+					<input type="text" name="Nama" class="form-control" placeholder="Masukan Nama Lengkap	" required>
 					<div class="form-group mb-4">
                     <!-- <label for="password" class="sr-only">Password</label> -->
                     <p class="">Jenis Kelamin</p>
-                    <select class="form-control" name="Jenis_Kelamin"  >
+                    <select class="form-control" name="Jenis_Kelamin" required >
 								<option>Laki-Laki</option>
 								<option>Perempuan</option>
 							</select>
 					<div class="form-group mb-4">
                     <!-- <label for="password" class="sr-only">Password</label> -->
                     <p class="">Tanggal Lahir</p>
-                    <input type="date" name="tgl_lahir" class="form-control" placeholder="Masukan Tanggal Lahir">
+                    <input type="date" name="tgl_lahir" class="form-control" placeholder="Masukan Tanggal Lahir" required>
 					<div class="form-group mb-4">
                     <!-- <label for="password" class="sr-only">Password</label> -->
                     <p class="mt-3">Nomor Telepon</p>
-                    <input type="text" name="no_hp" class="form-control" placeholder="Masukan Nomor Telepon">
+                    <input type="text" name="no_hp" class="form-control" placeholder="Masukan Nomor Telepon" required>
 					<div class="form-group mb-4">
                     <!-- <label for="password" class="sr-only">Password</label> -->
                     <p class="mt-3">Password</p>
-                    <input type="password" name="password" class="form-control" id="myInput" placeholder="Masukan Password">
+                    <input type="password" name="password" class="form-control" id="myInput" placeholder="Masukan Password" required>
                     <script>
                         var as=document.getElementsByClassName('<?=$currentURL?>')[0].classList.toggle('btn btn-primary')
                     </script>

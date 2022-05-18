@@ -11,7 +11,7 @@
 				foreach ($data['book'] as $key => $item) : ?>
 					<div class="col-md-12" style="text-align:left;">
 						<div class="">
-							<img src="<?= $item->img_room ?>" class="card-img-top" alt="<?= $item->img_room ?>">
+							<img src="<?= $item->img_room ?>" class="card-img-top" style="border-radius:30px;	" alt="<?= $item->img_room ?>">
 							<div class="col-md-12 mt-5">
 								<strong>
 									<h3 class="" ><?= $item->Nama_room ?> x <?= $item->jml_kamar ?> Kamar </h3>
@@ -35,17 +35,24 @@
 										CODEBooking = <?= $item->RefPB; ?>
 									</strong>
 								</p>
+								<?php 
+									// var_dump(date('Y-m-d'), $item->tgl_cekout);die;
+								?>
 								<?php if ($item->PayEnd == 0) : ?>
 									<a href="<?= base_url('/Resepsionis/payed?id=') . $item->id_pesanan . '&f=PayEnd&v=1' ?>" class="btn btn-warning">Bayar</a>
 								<?php else : ?>
-									<?php if (date('Y-m-d') >= $item->tgl_cekin && date('Y-m-d') <= $item->tgl_cekout) : ?>
+									<?php if (date('Y-m-d') == $item->tgl_cekout) : ?>
+										
 										<?php if ($item->Status_Kamar == "Cekin") : ?>
-											<p class="text-primary">Telah Melakukan Cekin Cekout Pada <?= $item->tgl_cekout ?>
-											</p>
+											<a href="<?= base_url('/Resepsionis/payed?id=') . $item->id_pesanan . '&f=Status_Kamar&v=Cekout' ?>" class="btn btn-primary">Cek Out</a>
+											<?php elseif($iteStatus_Kamar == "Cekout") : ?>
+												<p class="text-danger">Telah Cekout</p>
 										<?php else : ?>
 											<a href="<?= base_url('/Resepsionis/payed?id=') . $item->id_pesanan . '&f=Status_Kamar&v=Cekin' ?>" class="btn btn-primary">Cek In</a>
 										<?php endif ?>
-									<?php elseif (date('Y-m-d') == $item->tgl_cekout) : ?>
+									<?php elseif (date('Y-m-d') >= $item->tgl_cekin && date('Y-m-d') <= $item->tgl_cekout) : ?>
+										<p class="text-primary">Telah Melakukan Cekin, Dan Cekout Pada <?= $item->tgl_cekout ?>
+											</p>
 									<?php elseif (date('Y-m-d') > $item->tgl_cekout) : ?>
 										<p class="text-danger">Tidak / Terlambat Cek Out</p>
 									<?php endif; ?>

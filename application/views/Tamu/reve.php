@@ -40,10 +40,8 @@
                 </select>
                 <p class="mt-3">Pembayaran</p>
                 <select class="form-select" name="PayBay">
-                    <option>Transfer Bank</option>
-                    <option>Virtual Account</option>
-                    <option>E-wallet(Dana-ovo)</option>
                     <option>Bayar ditempat</option>
+                    <option>Transfer</option>
                 </select>
             </div>
         </div>
