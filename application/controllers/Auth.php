@@ -10,7 +10,7 @@ class Auth extends CI_Controller
         $this->Ceklogin();
     }
 
-    public function Ceklogin()
+    public function Ceklogin($value='')
     {
         if (empty($_GET{
             'out'})) {
@@ -36,6 +36,7 @@ class Auth extends CI_Controller
 			$_SESSION['ipw']="Username Sudah Terdaftar Harap Mengganti Username Anda    ";
 			redirect('/Auth/Register');
 		}else{
+            $_POST['password']=md5($_POST['password']);
 	   	 	$data=$_POST;
 	    	$data += array(
 	        'level' => 'tamu'
@@ -50,12 +51,17 @@ class Auth extends CI_Controller
     public function login()
     {
         $this->load->view('Auth/login');
+        // echo '<script type="text/javascript">
+        // alert("Silahkan Login Terlebih Dahulu");
+        // </script>';
+        
     }
+
 
     public function cekusers()
     {
         $username = $_POST['username'];
-        $password = $_POST['password'];
+        $password = md5($_POST['password']);
 
         $this->db->where('username', $username);
         $this->db->where('password', $password);

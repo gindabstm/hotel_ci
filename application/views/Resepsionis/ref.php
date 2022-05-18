@@ -19,7 +19,7 @@
 								<p>Nama Tamu = <?= $item->nama_tamu ?></p>
 								<p>Tanggal Cekin = <?= $item->tgl_cekin ?></p>
 								<p>Tanggal Cekout = <?= $item->tgl_cekout ?></p>
-								<p>Total Harga = Rp<?= $item->Harga ?></p>
+								<p>Total Harga = Rp<?php echo number_format($item->Harga) ?></p>
 								<p>Sistem pembayaran = <?= $item->PayBay ?></p>
 								<p>Pembayaran =
 									<?php if ($item->PayEnd == 0) {

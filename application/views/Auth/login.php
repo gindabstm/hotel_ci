@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../assets/css/login.css">
 </head>
 <body>
@@ -31,10 +32,26 @@
               <form method="POST" action="<?= base_url('/Auth/cekusers') ?>">
                   <div class="form-group">
                     <!-- <label for="text" class="sr-only">Username</label> -->
+                    <p class="mt-3">Username</p>
                     <input type="text" name="username" class="form-control" placeholder="Masukan Username">
                   <div class="form-group mb-4">
                     <!-- <label for="password" class="sr-only">Password</label> -->
-                    <input type="password" name="password" class="form-control" placeholder="Masukan Password">
+                    <p class="mt-3">Password</p>
+                    <input type="password" name="password" class="form-control" id="myInput" placeholder="Masukan Password">
+                    <script>
+                        var as=document.getElementsByClassName('<?=$currentURL?>')[0].classList.toggle('btn btn-primary')
+                    </script>
+                    <!-- <input type="checkbox" onclick="myFunction()"> Lihat Password
+                    <script>
+                    function myFunction() {
+                      var x = document.getElementById("myInput");
+                      if (x.type === "password") {
+                        x.type = "text";
+                      } else {
+                        x.type = "password";
+                      }
+                    }
+                    </script> -->
                   <input name="login" class="btn btn-block login-btn mb-4" type="submit" value="Login">
                 </form>
                 <a href="#!" class="forgot-password-link">Lupa password?</a>

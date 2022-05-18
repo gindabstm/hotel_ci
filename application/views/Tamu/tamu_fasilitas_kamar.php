@@ -33,7 +33,8 @@
                                     <?php endif; ?>
                                 </ul>
                             </p>
-                            <a href="<?= base_url('/Tamu/detailTipe') . '?id=' . $kamar['Info_kamar']->id ?>" class="btn btn-primary">Lihat Detail</a>
+                            <a href="<?= base_url('/Tamu/detailTipetamu') . '?id=' . $kamar['Info_kamar']->id ?>" class="btn btn-primary">Lihat Detail</a>
+                            
                         </div>
                     </div>
                 </div>

@@ -32,25 +32,45 @@
               <p class="login-card-description">Daftar</p>
               <form method="POST" action="<?= base_url('/Auth/addusers') ?>">
                     <!-- <label for="text" class="sr-only">Username</label> -->
+                    <p class="mt-3">Username</p>
 					<input type="text" name="username" class="form-control" placeholder="Masukan Username">
                   <div class="form-group mb-4">
                     <!-- <label for="password" class="sr-only">Password</label> -->
+                    <p class="mt-3">Nama Lengkap</p>
 					<input type="text" name="Nama" class="form-control" placeholder="Masukan Nama Lengkap	">
 					<div class="form-group mb-4">
                     <!-- <label for="password" class="sr-only">Password</label> -->
-                    <select class="form-control" name="Jenis_Kelamin">
+                    <p class="">Jenis Kelamin</p>
+                    <select class="form-control" name="Jenis_Kelamin"  >
 								<option>Laki-Laki</option>
 								<option>Perempuan</option>
 							</select>
 					<div class="form-group mb-4">
                     <!-- <label for="password" class="sr-only">Password</label> -->
+                    <p class="">Tanggal Lahir</p>
                     <input type="date" name="tgl_lahir" class="form-control" placeholder="Masukan Tanggal Lahir">
 					<div class="form-group mb-4">
                     <!-- <label for="password" class="sr-only">Password</label> -->
-                    <input type="text" name="no_hp" class="form-control" placeholder="08xxxxxxxx">
+                    <p class="mt-3">Nomor Telepon</p>
+                    <input type="text" name="no_hp" class="form-control" placeholder="Masukan Nomor Telepon">
 					<div class="form-group mb-4">
                     <!-- <label for="password" class="sr-only">Password</label> -->
-                    <input type="password" name="password" class="form-control" placeholder="Masukan Password">
+                    <p class="mt-3">Password</p>
+                    <input type="password" name="password" class="form-control" id="myInput" placeholder="Masukan Password">
+                    <script>
+                        var as=document.getElementsByClassName('<?=$currentURL?>')[0].classList.toggle('btn btn-primary')
+                    </script>
+                    <!-- <input type="checkbox" onclick="myFunction()"> Lihat Password
+                    <script>
+                    function myFunction() {
+                      var x = document.getElementById("myInput");
+                      if (x.type === "password") {
+                        x.type = "text";
+                      } else {
+                        x.type = "password";
+                      }
+                    }
+                    </script> -->
                   <input  class="btn btn-block login-btn mb-4" type="submit" value="Daftar">
                 </form>
                 <p class="login-card-footer-text">Sudah punya akun? <a href="<?=base_url('/Auth/login')?>" class="text-reset">Masuk</a></p>

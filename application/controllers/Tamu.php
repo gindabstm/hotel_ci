@@ -27,6 +27,26 @@ class Tamu extends CI_Controller
         $this->load->view('Tamu/detail_fasilitas_kamar', ['data' => $data]);
     }
 
+    public function detailTipetamu()
+    {
+        $this->db->where('id', $_GET['id']);
+        $tipe_kamar = $this->db->get('tipe_room')->result();
+        //var_dump($tipe_kamar);
+        $data = [];
+        foreach ($tipe_kamar as $key => $kamar) {
+            $this->db->where('id_tipekamar', $kamar->id);
+            $fasilitaskamar = $this->db->get('F_kamar')->result();
+            $data[$key] = array(
+                'Info_kamar' => $kamar,
+                'F_kamar' => $fasilitaskamar
+            );
+        }
+        $this->load->view('Tamu/tamu_detail_fasilitas_kamar', ['data' => $data]);
+        
+        
+    }
+
+
     public function Booking()
     {
         $data['user'] = $_SESSION['user'];
@@ -61,6 +81,22 @@ class Tamu extends CI_Controller
             );
         }
         $this->load->view('Tamu/fasilitas_kamar', ['data' => $data]);
+    }
+
+    public function TipeKamartamu()
+    {
+        $tipe_kamar = $this->db->get('tipe_room')->result();
+        $data = [];
+        foreach ($tipe_kamar as $key => $kamar) {
+            $this->db->where('id_tipekamar', $kamar->id);
+            $fasilitaskamar = $this->db->get('F_kamar')->result();
+            $data[$key] = array(
+                'Info_kamar' => $kamar,
+                'F_kamar' => $fasilitaskamar
+            );
+        }
+        $this->load->view('Tamu/tamu_fasilitas_kamar', ['data' => $data]);
+        
     }
 
     public function ref()

@@ -35,11 +35,10 @@
                                 <?php endif; ?>
                             </div>
                             </p>
-                            <a href="<?= base_url('/Tamu/booking') . '?id=' . $kamar['Info_kamar']->id ?> " class="btn btn-primary">Pesan Sekarang</a>
+                            <a href="<?= base_url('/Auth/login') . '?id=' . $kamar['Info_kamar']->id ?> " class="btn btn-primary">Pesan Sekarang</a>
                         </div>
                     </div>
                 </div>
-
             </div>
         <?php endforeach ?>
     </div>

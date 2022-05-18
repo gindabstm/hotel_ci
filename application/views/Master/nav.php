@@ -105,13 +105,14 @@
 									<li><a href="<?= base_url('/Auth/Logout?out=true') ?>">Keluar</a></li>
 								<?php endif; ?>
 								<?php if ($_SESSION['user']->level == "admin") : ?>
-									<!-- <li><a href="<?= base_url('Admin/add?v=allcounter&t=users') ?>&req=Data Traking">Data User</a></li> -->
-									<li><a href="<?= base_url('admin/add?v=allcounter&t=F_kamar') ?>&req=Data Traking">Data Fasilitas Kamar</a></li>
-									<li><a href="<?= base_url('admin/add?v=allcounter&t=F_Hotel') ?>&req=Data Traking">Data Fasilitas Hotel</a></li>
-									<li><a href="<?= base_url('admin/add?v=allcounter&t=Tipe_room') ?>&req=Data Traking">Data Tipe Kamar</a></li>
+									<li><a href="<?= base_url('Admin/add?v=allcounter&t=users') ?>&req=Data Traking">Data User</a></li>
+									<li><a href="<?= base_url('admin/add?v=allcounter&t=F_kamar') ?>&req=Data Traking">Fasilitas Kamar</a></li>
+									<li><a href="<?= base_url('admin/add?v=allcounter&t=F_Hotel') ?>&req=Data Traking">Fasilitas Hotel</a></li>
+									<li><a href="<?= base_url('admin/add?v=allcounter&t=Tipe_room') ?>&req=Data Traking">Tipe Kamar</a></li>
 									<li><a href="<?= base_url('/Auth/Logout?out=true') ?>">Keluar</a></li>
 								<?php endif; ?>
 							<?php else : ?>
+								<li class="<?= base_url('/Tamu/TipeKamar') ?>"><a href="<?= base_url('/Tamu/TipeKamartamu') ?>?req=Tipe Kamar Pilihanmu">Tipe Kamar</a></li>
 								<li><a href="<?= base_url('/Auth/Login') ?>">Masuk</a></li>
 								<li><a href="<?= base_url('/Auth/Register') ?>">Daftar</a></li>
 

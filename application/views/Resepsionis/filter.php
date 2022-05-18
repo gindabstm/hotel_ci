@@ -45,7 +45,7 @@
 			</div>
 			<div class="card table-responsive">
 				<?php if (empty($data)) : ?>
-					<h2 class="rounded text-center col-12 alert-warning">
+					<h2 class="rounded text-center col-12 alert-danger">  	
 						Data Tidak Di Temukan
 					</h2>
 				<?php else : ?>
